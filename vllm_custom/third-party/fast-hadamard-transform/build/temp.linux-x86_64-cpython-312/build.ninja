@@ -1,0 +1,33 @@
+ninja_required_version = 1.3
+cxx = /home/junsu/anaconda3/envs/quantized-reasoning-models/bin/x86_64-conda-linux-gnu-c++
+nvcc = /home/junsu/anaconda3/envs/quantized-reasoning-models/bin/nvcc
+
+cflags = -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/junsu/anaconda3/envs/quantized-reasoning-models/include -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/junsu/anaconda3/envs/quantized-reasoning-models/include -fPIC -I/home/junsu/Quantized-Reasoning-Models/third-party/fast-hadamard-transform -I/home/junsu/anaconda3/envs/quantized-reasoning-models/lib/python3.12/site-packages/torch/include -I/home/junsu/anaconda3/envs/quantized-reasoning-models/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -I/home/junsu/anaconda3/envs/quantized-reasoning-models/lib/python3.12/site-packages/torch/include/TH -I/home/junsu/anaconda3/envs/quantized-reasoning-models/lib/python3.12/site-packages/torch/include/THC -I/home/junsu/anaconda3/envs/quantized-reasoning-models/include -I/home/junsu/anaconda3/envs/quantized-reasoning-models/include/python3.12 -c
+post_cflags = -O3 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=fast_hadamard_transform_cuda -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+cuda_cflags = -I/home/junsu/Quantized-Reasoning-Models/third-party/fast-hadamard-transform -I/home/junsu/anaconda3/envs/quantized-reasoning-models/lib/python3.12/site-packages/torch/include -I/home/junsu/anaconda3/envs/quantized-reasoning-models/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -I/home/junsu/anaconda3/envs/quantized-reasoning-models/lib/python3.12/site-packages/torch/include/TH -I/home/junsu/anaconda3/envs/quantized-reasoning-models/lib/python3.12/site-packages/torch/include/THC -I/home/junsu/anaconda3/envs/quantized-reasoning-models/include -I/home/junsu/anaconda3/envs/quantized-reasoning-models/include/python3.12 -c
+cuda_post_cflags = -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_BFLOAT16_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ -U__CUDA_NO_BFLOAT162_OPERATORS__ -U__CUDA_NO_BFLOAT162_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math --ptxas-options=-v -lineinfo -allow-unsupported-compiler -gencode arch=compute_70,code=sm_70 -gencode arch=compute_80,code=sm_80 --threads 4 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=fast_hadamard_transform_cuda -D_GLIBCXX_USE_CXX11_ABI=0 -ccbin /home/junsu/anaconda3/envs/quantized-reasoning-models/bin/x86_64-conda-linux-gnu-cc -std=c++17
+cuda_dlink_post_cflags = 
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+rule cuda_compile
+  depfile = $out.d
+  deps = gcc
+  command = $nvcc --generate-dependencies-with-compile --dependency-output $out.d $cuda_cflags -c $in -o $out $cuda_post_cflags
+
+
+
+
+
+build /home/junsu/Quantized-Reasoning-Models/third-party/fast-hadamard-transform/build/temp.linux-x86_64-cpython-312/csrc/fast_hadamard_transform.o: compile /home/junsu/Quantized-Reasoning-Models/third-party/fast-hadamard-transform/csrc/fast_hadamard_transform.cpp
+build /home/junsu/Quantized-Reasoning-Models/third-party/fast-hadamard-transform/build/temp.linux-x86_64-cpython-312/csrc/fast_hadamard_transform_cuda.o: cuda_compile /home/junsu/Quantized-Reasoning-Models/third-party/fast-hadamard-transform/csrc/fast_hadamard_transform_cuda.cu
+
+
+
+
+
+
