@@ -97,6 +97,7 @@ class VLLMModelConfig:
     enable_prefix_caching: bool = None
     enable_chunked_prefill: bool = None
     init_model: bool = None
+    max_num_seqs: int = 8  # maximum number of sequences to process in parallel (batch size)
 
     subfolder: Optional[str] = None
 
@@ -188,6 +189,7 @@ class VLLMModel(LightevalModel):
             "enforce_eager": config.enforce_eager,
             "enable_prefix_caching": config.enable_prefix_caching,
             "enable_chunked_prefill": config.enable_chunked_prefill,
+            "max_num_seqs": config.max_num_seqs,
         }
         if int(config.data_parallel_size) > 1:
             self.model_args["distributed_executor_backend"] = "ray"

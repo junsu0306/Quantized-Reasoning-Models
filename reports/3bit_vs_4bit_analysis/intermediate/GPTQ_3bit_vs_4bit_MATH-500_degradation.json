@@ -1,0 +1,164 @@
+{
+  "count": 78,
+  "problem_types_overlapping": {
+    "geometry": 9,
+    "algebra": 7,
+    "calculus": 0,
+    "trigonometry": 6,
+    "number_theory": 8,
+    "combinatorics": 2,
+    "probability": 4
+  },
+  "primary_problem_types": {
+    "other": 47,
+    "geometry": 8,
+    "number_theory": 8,
+    "trigonometry": 6,
+    "algebra": 5,
+    "probability": 2,
+    "combinatorics": 2
+  },
+  "loop_distribution": {
+    "no_loop": 23,
+    "moderate_wait_loop": 22,
+    "mixed_loop": 21,
+    "number_loop": 5,
+    "phrase_repeat": 5,
+    "let_me_loop": 1,
+    "severe_wait_loop": 1
+  },
+  "length_stats": {
+    "avg_word_count_3bit": 6554.397435897436,
+    "avg_word_count_4bit": 2381.0384615384614,
+    "median_word_count_3bit": 5361.5,
+    "median_word_count_4bit": 1696.0,
+    "length_ratio": 2.752747400670899
+  },
+  "marker_stats": {
+    "avg_wait_3bit": 110.85897435897436,
+    "avg_wait_4bit": 30.615384615384617,
+    "avg_perhaps_3bit": 7.32051282051282,
+    "avg_perhaps_4bit": 11.782051282051283,
+    "avg_total_markers_3bit": 200.65384615384616,
+    "avg_total_markers_4bit": 86.94871794871794
+  },
+  "diversity_stats": {
+    "avg_diversity_3bit": 0.1431940947874615,
+    "avg_diversity_4bit": 0.2424373785055286,
+    "diversity_drop": 0.0992432837180671
+  },
+  "answer_stats": {
+    "has_boxed_3bit_rate": 0.7948717948717948,
+    "has_boxed_4bit_rate": 0.9871794871794872
+  },
+  "complexity_distribution": {
+    "1-2k": 31,
+    "<1k": 15,
+    "2-3k": 14,
+    "3-5k": 10,
+    "5-10k": 7,
+    ">10k": 1
+  },
+  "worst_cases": [
+    {
+      "problem_idx": 345,
+      "word_count_3bit": 22742,
+      "word_count_4bit": 1273,
+      "wait_count_3bit": 50,
+      "loop_type_3bit": "phrase_repeat",
+      "primary_problem_type": "other",
+      "has_geometry": false,
+      "has_trigonometry": false
+    },
+    {
+      "problem_idx": 204,
+      "word_count_3bit": 21986,
+      "word_count_4bit": 4579,
+      "wait_count_3bit": 144,
+      "loop_type_3bit": "moderate_wait_loop",
+      "primary_problem_type": "other",
+      "has_geometry": false,
+      "has_trigonometry": false
+    },
+    {
+      "problem_idx": 9,
+      "word_count_3bit": 18883,
+      "word_count_4bit": 1378,
+      "wait_count_3bit": 91,
+      "loop_type_3bit": "let_me_loop",
+      "primary_problem_type": "other",
+      "has_geometry": false,
+      "has_trigonometry": false
+    },
+    {
+      "problem_idx": 212,
+      "word_count_3bit": 17606,
+      "word_count_4bit": 843,
+      "wait_count_3bit": 17,
+      "loop_type_3bit": "number_loop",
+      "primary_problem_type": "geometry",
+      "has_geometry": true,
+      "has_trigonometry": false
+    },
+    {
+      "problem_idx": 198,
+      "word_count_3bit": 17484,
+      "word_count_4bit": 1112,
+      "wait_count_3bit": 164,
+      "loop_type_3bit": "moderate_wait_loop",
+      "primary_problem_type": "geometry",
+      "has_geometry": true,
+      "has_trigonometry": false
+    },
+    {
+      "problem_idx": 256,
+      "word_count_3bit": 16943,
+      "word_count_4bit": 2413,
+      "wait_count_3bit": 42,
+      "loop_type_3bit": "mixed_loop",
+      "primary_problem_type": "other",
+      "has_geometry": false,
+      "has_trigonometry": false
+    },
+    {
+      "problem_idx": 357,
+      "word_count_3bit": 16787,
+      "word_count_4bit": 1544,
+      "wait_count_3bit": 140,
+      "loop_type_3bit": "moderate_wait_loop",
+      "primary_problem_type": "other",
+      "has_geometry": false,
+      "has_trigonometry": false
+    },
+    {
+      "problem_idx": 272,
+      "word_count_3bit": 16578,
+      "word_count_4bit": 1101,
+      "wait_count_3bit": 32,
+      "loop_type_3bit": "phrase_repeat",
+      "primary_problem_type": "combinatorics",
+      "has_geometry": false,
+      "has_trigonometry": false
+    },
+    {
+      "problem_idx": 330,
+      "word_count_3bit": 14728,
+      "word_count_4bit": 3232,
+      "wait_count_3bit": 23,
+      "loop_type_3bit": "number_loop",
+      "primary_problem_type": "other",
+      "has_geometry": false,
+      "has_trigonometry": false
+    },
+    {
+      "problem_idx": 168,
+      "word_count_3bit": 12543,
+      "word_count_4bit": 654,
+      "wait_count_3bit": 807,
+      "loop_type_3bit": "moderate_wait_loop",
+      "primary_problem_type": "other",
+      "has_geometry": false,
+      "has_trigonometry": false
+    }
+  ]
+}

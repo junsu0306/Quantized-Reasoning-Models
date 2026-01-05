@@ -1,0 +1,8 @@
+| Model                                              |   Accuracy (%) |   Δ from Baseline (pp) | Correct/Total   |   Avg Words (Correct) |   Avg Words (Incorrect) |   Wait Count (Incorrect) |
+|:---------------------------------------------------|---------------:|-----------------------:|:----------------|----------------------:|------------------------:|-------------------------:|
+| DeepSeek-R1-Distill-Qwen-1.5B-awq-w3g128-tp1       |           6.67 |                 -18.89 | 6/90            |                  7388 |                   18021 |                   1611.3 |
+| DeepSeek-R1-Distill-Qwen-1.5B-awq-w4g128-tp1       |          20    |                  -5.56 | 18/90           |                  3134 |                   11608 |                    203.2 |
+| DeepSeek-R1-Distill-Qwen-1.5B-gptq-w3g128-tp1      |          10    |                 -15.56 | 9/90            |                  2927 |                    9878 |                    102.7 |
+| DeepSeek-R1-Distill-Qwen-1.5B-gptq-w4g128-tp1      |          18.89 |                  -6.67 | 17/90           |                  2712 |                    9613 |                    129.7 |
+| DeepSeek-R1-Distill-Qwen-1.5B-kvquant_star-kv4-tp1 |          20    |                  -5.56 | 18/90           |                  3400 |                   11196 |                    144.8 |
+| DeepSeek-R1-Distill-Qwen-1.5B                      |          25.56 |                   0    | 23/90           |                  2886 |                   10710 |                    136.2 |

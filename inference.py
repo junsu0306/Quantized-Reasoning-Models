@@ -125,10 +125,11 @@ def main(args):
         dtype=args.dtype,
         max_model_length=args.max_model_length,
         tensor_parallel_size=args.tensor_parallel_size,
-        gpu_memory_utilization=0.9,
+        gpu_memory_utilization=0.95,  # increased for more KV cache
         enforce_eager=True,
         enable_prefix_caching=False,
         enable_chunked_prefill=False,
+        max_num_seqs=4,  # reduced to avoid preemption
         generation_parameters=generation_parameters,
         init_model=(args.load_responses_from_json_file is None),
     )

@@ -1,0 +1,14 @@
+| Model                                              | Dataset   |   Accuracy (%) |   Avg Words |   Avg Wait Count |   Token Diversity |   Has Answer (%) |
+|:---------------------------------------------------|:----------|---------------:|------------:|-----------------:|------------------:|-----------------:|
+| DeepSeek-R1-Distill-Qwen-1.5B-awq-w3g128-tp1       | AIME-90   |           6.67 |       17312 |           1531.4 |            0.0552 |             14.4 |
+| DeepSeek-R1-Distill-Qwen-1.5B-awq-w3g128-tp1       | MATH-500  |          52.6  |       11327 |            968.7 |            0.1185 |             43   |
+| DeepSeek-R1-Distill-Qwen-1.5B-awq-w4g128-tp1       | AIME-90   |          20    |        9913 |            169.3 |            0.1288 |             83.3 |
+| DeepSeek-R1-Distill-Qwen-1.5B-awq-w4g128-tp1       | MATH-500  |          83.4  |        2959 |             46.7 |            0.2427 |             97.4 |
+| DeepSeek-R1-Distill-Qwen-1.5B-gptq-w3g128-tp1      | AIME-90   |          10    |        9183 |             97   |            0.118  |             73.3 |
+| DeepSeek-R1-Distill-Qwen-1.5B-gptq-w3g128-tp1      | MATH-500  |          71.4  |        2935 |             41.5 |            0.2366 |             94.6 |
+| DeepSeek-R1-Distill-Qwen-1.5B-gptq-w4g128-tp1      | AIME-90   |          18.89 |        8309 |            111.4 |            0.1459 |             85.6 |
+| DeepSeek-R1-Distill-Qwen-1.5B-gptq-w4g128-tp1      | MATH-500  |          83    |        2976 |             36.4 |            0.2493 |             96.4 |
+| DeepSeek-R1-Distill-Qwen-1.5B-kvquant_star-kv4-tp1 | AIME-90   |          20    |        9637 |            123.3 |            0.147  |             81.1 |
+| DeepSeek-R1-Distill-Qwen-1.5B-kvquant_star-kv4-tp1 | MATH-500  |          84.2  |        3025 |             39.5 |            0.253  |             98   |
+| DeepSeek-R1-Distill-Qwen-1.5B                      | AIME-90   |          25.56 |        8711 |            107.8 |            0.1548 |             85.6 |
+| DeepSeek-R1-Distill-Qwen-1.5B                      | MATH-500  |          85    |        2983 |             33.2 |            0.2505 |             97.8 |

@@ -1,0 +1,3881 @@
+{
+  "model_name": "DeepSeek-R1-Distill-Qwen-1.5B-gptq-w3g128-tp1",
+  "dataset": "AIME-90",
+  "total_samples": 90,
+  "correct_count": 9,
+  "incorrect_count": 81,
+  "accuracy": 0.1,
+  "avg_word_count_all": 9183.022222222222,
+  "avg_word_count_correct": 2927.3333333333335,
+  "avg_word_count_incorrect": 9878.098765432098,
+  "median_word_count_all": 7818.0,
+  "max_word_count": 26929,
+  "has_answer_rate": 0.7333333333333333,
+  "has_answer_rate_correct": 1.0,
+  "has_answer_rate_incorrect": 0.7037037037037037,
+  "avg_wait_count_all": 97.0111111111111,
+  "avg_wait_count_correct": 46.0,
+  "avg_wait_count_incorrect": 102.67901234567901,
+  "max_wait_count": 380,
+  "avg_diversity_all": 0.11800339249630767,
+  "avg_diversity_correct": 0.2001063273210855,
+  "avg_diversity_incorrect": 0.10888084418244347,
+  "avg_diversity_last_2k_all": 0.1385964192069306,
+  "garbled_text_count": 3,
+  "avg_gibberish_count": 5.344444444444444,
+  "response_analyses": [
+    {
+      "idx": 0,
+      "problem": "",
+      "gold_answer": [
+        "024"
+      ],
+      "predicted_answer": "2 + x^n = 1 + x^n + 1",
+      "is_correct": false,
+      "word_count": 13992,
+      "char_count": 57945,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 95,
+        "hmm": 6,
+        "so": 0,
+        "but": 74,
+        "actually": 6
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, 3k \u2261 -4k mod7": 4,
+          "But 1 + \u03c9^k + \u03c9^{3k} = 1 + \u03c9^k + \u03c9^{3k}": 5,
+          "Wait, 1 + \u03c9^k + \u03c9^{3k}": 3,
+          "So, 7 terms: 3, (1 + \u03c9^2 + \u03c9^6), (1 + \u03c9^3 + \u03c9^2), (1 + \u03c9^4 + \u03c9^5), (1 + \u03c9^5 +1), (1 + \u03c9^6 + \u03c9^4)": 4,
+          "But 1 + x^5 +1 is 2 + x^5": 3,
+          "So, 2 + x^5 = 1 + x^5 +1": 11,
+          "Therefore, 2 + x^5 = 1 + x^5 +1": 569,
+          "Thus, 2 + x^5 = 1 + x^5 +1": 91,
+          "Hence, 2 + x^5 = 1 + x^5 +1": 121
+        },
+        "max_sentence_repetition": 569
+      },
+      "token_diversity": 0.07640080045740423,
+      "token_diversity_last_2k": 0.0665,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.14203123651738717,
+        "has_encoding_error": true,
+        "gibberish_count": 6
+      }
+    },
+    {
+      "idx": 1,
+      "problem": "",
+      "gold_answer": [
+        "550"
+      ],
+      "predicted_answer": "550",
+      "is_correct": true,
+      "word_count": 3230,
+      "char_count": 17118,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 33,
+        "hmm": 0,
+        "so": 0,
+        "but": 32,
+        "actually": 2
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, P is at (D/2, 264)": 3
+        },
+        "max_sentence_repetition": 3
+      },
+      "token_diversity": 0.17089783281733747,
+      "token_diversity_last_2k": 0.2225,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.029442691903259727,
+        "has_encoding_error": false,
+        "gibberish_count": 0
+      }
+    },
+    {
+      "idx": 2,
+      "problem": "",
+      "gold_answer": [
+        "049"
+      ],
+      "predicted_answer": "35",
+      "is_correct": false,
+      "word_count": 8379,
+      "char_count": 59600,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 60,
+        "hmm": 1,
+        "so": 0,
+        "but": 53,
+        "actually": 5
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Lots of duplicates": 21,
+          "Not extra-distinct": 90,
+          "Duplicate 1s": 19,
+          "Duplicate 0s": 5,
+          "Duplicate 2s": 14,
+          "Duplicate 1s and 2s": 3,
+          "Duplicate 0s and 2s": 4,
+          "Duplicate 3s": 9,
+          "Remainders:0,0,0,4,0": 5,
+          "Remainders:1,1,1,1,1": 5,
+          "Remainders:1,0,3,2,3": 7,
+          "Duplicate 1s and 3s": 6,
+          "Remainders:0,1,2,4,2": 3,
+          "Remainders:1,2,3,0,5": 3,
+          "All distinct": 7,
+          "So, n=35 is extra-distinct": 3,
+          "Remainders:0,2,0,4,2": 3,
+          "Remainders:1,0,3,1,3": 3,
+          "Remainders:1,0,1,1,3": 4,
+          "So, 4 numbers": 3,
+          "So n=87 is not extra-distinct": 3,
+          "Which is not equal to mod4 or mod5": 5,
+          "So, n is not extra-distinct": 4,
+          "So, remainders:1,3,0": 3,
+          "So, remainders:1,2,3,0,1": 3,
+          "Thus, the solution is \\boxed{35}, \\boxed{45}, \\boxed{55}, \\boxed{65}, \\boxed{75}, \\boxed{85}, \\boxed{95}, \\boxed{105}, \\boxed{115}, \\boxed{125}, \\boxed{135}, \\boxed{145}, \\boxed{155}, \\boxed{165}, \\boxed{175}, \\boxed{185}, \\boxed{195}, \\boxed{205}, \\boxed{215}, \\boxed{225}, \\boxed{235}, \\boxed{245}, \\boxed{255}, \\boxed{265}, \\boxed{275}, \\boxed{285}, \\boxed{295}, \\boxed{305}, \\boxed{315}, \\boxed{325}, \\boxed{335}, \\boxed{345}, \\boxed{355}, \\boxed{365}, \\boxed{375}, \\boxed{385}, \\boxed{395}, \\boxed{405}, \\boxed{415}, \\boxed{425}, \\boxed{435}, \\boxed{445}, \\boxed{455}, \\boxed{465}, \\boxed{475}, \\boxed{485}, \\boxed{495}, \\boxed{505}, \\boxed{515}, \\boxed{525}, \\boxed{535}, \\boxed{545}, \\boxed{555}, \\boxed{565}, \\boxed{575}, \\boxed{585}, \\boxed{595}, \\boxed{605}, \\boxed{615}, \\boxed{625}, \\boxed{635}, \\boxed{645}, \\boxed{655}, \\boxed{665}, \\boxed{675}, \\boxed{685}, \\boxed{695}, \\boxed{705}, \\boxed{715}, \\boxed{725}, \\boxed{735}, \\boxed{745}, \\boxed{755}, \\boxed{765}, \\boxed{775}, \\boxed{785}, \\boxed{795}, \\boxed{805}, \\boxed{815}, \\boxed{825}, \\boxed{835}, \\boxed{845}, \\boxed{855}, \\boxed{865}, \\boxed{875}, \\boxed{885}, \\boxed{895}, \\boxed{905}, \\boxed{915}, \\boxed{925}, \\boxed{935}, \\boxed{945}, \\boxed{955}, \\boxed{965}, \\boxed{975}, \\boxed{985}, \\boxed{995}": 5,
+          "**Final Answer**\nThe numbers are all integers from 35 up to 995 inclusive": 3
+        },
+        "max_sentence_repetition": 90
+      },
+      "token_diversity": 0.24704618689581095,
+      "token_diversity_last_2k": 0.6155,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.05518456375838926,
+        "has_encoding_error": false,
+        "gibberish_count": 1
+      }
+    },
+    {
+      "idx": 3,
+      "problem": "",
+      "gold_answer": [
+        "756"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 15112,
+      "char_count": 77642,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 171,
+        "hmm": 2,
+        "so": 0,
+        "but": 241,
+        "actually": 6
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Therefore, the sides of A\u2019B\u2019C\u2019 are |AB| / cos(theta), |AC| / cos(theta), |BC| / cos(theta)": 7,
+          "So, triangle A\u2019B\u2019C\u2019 has sides |AB| / cos(theta), |AC| / cos(theta), |BC| / cos(theta)": 5,
+          "But triangle A\u2019B\u2019C\u2019 is similar to triangle ABC, scaled by 1 / cos(theta)": 5,
+          "So, the sides of A\u2019B\u2019C\u2019 are |AB| / cos(theta), |AC| / cos(theta), |BC| / cos(theta)": 6,
+          "But in triangle A\u2019B\u2019C\u2019, |A\u2019B\u2019| = |AB| / cos(theta), |AC| = |AC| / cos(theta), |BC| = |BC| / cos(theta)": 8,
+          "But in triangle ABC, |AB|, |AC|, |BC| of ABC are 560, 30, 32": 3,
+          "But in triangle A\u2019B\u2019C\u2019, |AB| of A\u2019B\u2019C\u2019 is |AB| of ABC / cos(theta), |AC| of A\u2019B\u2019C\u2019 is |AC| of ABC / cos(theta), |BC| of A\u2019B\u2019C\u2019 is |BC| of ABC / cos(theta)": 3
+        },
+        "max_sentence_repetition": 8
+      },
+      "token_diversity": 0.04949708840656432,
+      "token_diversity_last_2k": 0.0015,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.14675047010638573,
+        "has_encoding_error": false,
+        "gibberish_count": 2
+      }
+    },
+    {
+      "idx": 4,
+      "problem": "",
+      "gold_answer": [
+        "540"
+      ],
+      "predicted_answer": "108\\sqrt{41",
+      "is_correct": false,
+      "word_count": 1845,
+      "char_count": 11688,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 27,
+        "hmm": 3,
+        "so": 0,
+        "but": 19,
+        "actually": 3
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {},
+        "max_sentence_repetition": 2
+      },
+      "token_diversity": 0.30677506775067753,
+      "token_diversity_last_2k": 0.30677506775067753,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.08692676249144421,
+        "has_encoding_error": false,
+        "gibberish_count": 3
+      }
+    },
+    {
+      "idx": 5,
+      "problem": "",
+      "gold_answer": [
+        "721"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 7522,
+      "char_count": 52385,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 32,
+        "hmm": 12,
+        "so": 0,
+        "but": 55,
+        "actually": 2
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {},
+        "max_sentence_repetition": 2
+      },
+      "token_diversity": 0.1781441106088806,
+      "token_diversity_last_2k": 0.33,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.05824186312875823,
+        "has_encoding_error": false,
+        "gibberish_count": 12
+      }
+    },
+    {
+      "idx": 6,
+      "problem": "",
+      "gold_answer": [
+        "154"
+      ],
+      "predicted_answer": "22",
+      "is_correct": false,
+      "word_count": 2597,
+      "char_count": 12706,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 26,
+        "hmm": 4,
+        "so": 0,
+        "but": 26,
+        "actually": 0
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {},
+        "max_sentence_repetition": 1
+      },
+      "token_diversity": 0.17366191759722757,
+      "token_diversity_last_2k": 0.192,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.058791122304423106,
+        "has_encoding_error": false,
+        "gibberish_count": 4
+      }
+    },
+    {
+      "idx": 7,
+      "problem": "",
+      "gold_answer": [
+        "841"
+      ],
+      "predicted_answer": "1",
+      "is_correct": false,
+      "word_count": 6390,
+      "char_count": 33884,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 74,
+        "hmm": 1,
+        "so": 0,
+        "but": 196,
+        "actually": 4
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, 59b= -4": 3
+        },
+        "max_sentence_repetition": 3
+      },
+      "token_diversity": 0.15805946791862285,
+      "token_diversity_last_2k": 0.244,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.06477983709125251,
+        "has_encoding_error": false,
+        "gibberish_count": 1
+      }
+    },
+    {
+      "idx": 8,
+      "problem": "",
+      "gold_answer": [
+        "106"
+      ],
+      "predicted_answer": "56 \\times 90",
+      "is_correct": false,
+      "word_count": 7957,
+      "char_count": 33563,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 111,
+        "hmm": 10,
+        "so": 0,
+        "but": 153,
+        "actually": 4
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "From 2: p q = 8100": 3,
+          "Therefore, the problem is impossible, so the area is zero": 3
+        },
+        "max_sentence_repetition": 3
+      },
+      "token_diversity": 0.1117255246952369,
+      "token_diversity_last_2k": 0.1725,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.07454637547299109,
+        "has_encoding_error": false,
+        "gibberish_count": 10
+      }
+    },
+    {
+      "idx": 9,
+      "problem": "",
+      "gold_answer": [
+        "235"
+      ],
+      "predicted_answer": "189",
+      "is_correct": false,
+      "word_count": 3010,
+      "char_count": 16318,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 74,
+        "hmm": 5,
+        "so": 0,
+        "but": 54,
+        "actually": 10
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, for each k, it's 21": 3
+        },
+        "max_sentence_repetition": 3
+      },
+      "token_diversity": 0.16046511627906976,
+      "token_diversity_last_2k": 0.181,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.012869224169628631,
+        "has_encoding_error": false,
+        "gibberish_count": 5
+      }
+    },
+    {
+      "idx": 10,
+      "problem": "",
+      "gold_answer": [
+        "220"
+      ],
+      "predicted_answer": "220",
+      "is_correct": true,
+      "word_count": 3346,
+      "char_count": 14563,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 56,
+        "hmm": 6,
+        "so": 0,
+        "but": 57,
+        "actually": 0
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "571, which is non-integer": 3
+        },
+        "max_sentence_repetition": 3
+      },
+      "token_diversity": 0.13717872086072924,
+      "token_diversity_last_2k": 0.1515,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.041749639497356314,
+        "has_encoding_error": false,
+        "gibberish_count": 6
+      }
+    },
+    {
+      "idx": 11,
+      "problem": "",
+      "gold_answer": [
+        "081"
+      ],
+      "predicted_answer": "0",
+      "is_correct": false,
+      "word_count": 8446,
+      "char_count": 47653,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 104,
+        "hmm": 4,
+        "so": 0,
+        "but": 148,
+        "actually": 8
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, the family is an intersecting family": 3,
+          "So, how many such families are there": 5,
+          "Therefore, the number of such families is zero": 3,
+          "Hence, the answer is zero": 3,
+          "So, the number of such families is equal to the number of such 16-element sets": 8,
+          "So, the family is a 16-element set, so the family is a 16-element set where all pairs intersect": 7
+        },
+        "max_sentence_repetition": 8
+      },
+      "token_diversity": 0.06665877338385034,
+      "token_diversity_last_2k": 0.102,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.007512643485195056,
+        "has_encoding_error": false,
+        "gibberish_count": 4
+      }
+    },
+    {
+      "idx": 12,
+      "problem": "",
+      "gold_answer": [
+        "025"
+      ],
+      "predicted_answer": "25",
+      "is_correct": true,
+      "word_count": 1448,
+      "char_count": 6694,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 13,
+        "hmm": 7,
+        "so": 0,
+        "but": 15,
+        "actually": 0
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, x = 10k and y = 5/(2k)": 3
+        },
+        "max_sentence_repetition": 3
+      },
+      "token_diversity": 0.2430939226519337,
+      "token_diversity_last_2k": 0.2430939226519337,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.06617866746340006,
+        "has_encoding_error": false,
+        "gibberish_count": 7
+      }
+    },
+    {
+      "idx": 13,
+      "problem": "",
+      "gold_answer": [
+        "220"
+      ],
+      "predicted_answer": "1",
+      "is_correct": false,
+      "word_count": 8364,
+      "char_count": 53903,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 81,
+        "hmm": 3,
+        "so": 0,
+        "but": 100,
+        "actually": 13
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, 2310 is 105*22, 70*33, 42*55, 30*77": 3,
+          "So, 2022 is 2310 - 288": 3,
+          "So, binom(2022,4) = binom(2310 - 288,4)": 3,
+          "But 2310 is divisible by 105,70,42,30": 3,
+          "So, binom(2022 - sum(S),4) = binom(2310 - sum(S),4)": 17,
+          "So, binom(2022 - sum(S),4) is equal to binom(2310 - sum(S),4)": 4,
+          "So, binom(2022 - sum(S),4) = binom(2310,4) - binom(2310,3)*4 + binom(2310,2)*6 - binom(2310,1)*4 + binom(2310,0)": 19,
+          "So, substituting back, binom(2022 - sum(S),4) = binom(2310,4) - binom(2310,3)*4 + binom(2310,2)*6 - binom(2310,1)*4 + binom(2310,0)": 5,
+          "So, binom(2022 - sum(S),4) is equal to binom(2310,4) - binom(2310,3)*4 + binom(2310,2)*6 - binom(2310,1)*4 + binom(2310,0)": 47,
+          "So, binom(2310,4) is equal to binom(2310,4) - binom(2310,3)*4 + binom(2310,2)*6 - binom(2310,1)*4 + binom(2310,0)": 5,
+          "Hence, binom(2310,4) - binom(2310,3)*4 + binom(2310,2)*6 - binom(2310,1)*4 + binom(2310,0) is equal to binom(2310,4) - binom(2310,3)*4 + binom(2310,2)*6 - binom(2310,1)*4 + binom(2310,0)": 8,
+          "Wait, binom(2310,4) is equal to binom(2310,4) - binom(2310,3)*4 + binom(2310,2)*6 - binom(2310,1)*4 + binom(2310,0)": 4,
+          "Hence, binom(2310,4) is equal to binom(2310,4) - binom(2310,3)*4 + binom(2310,2)*6 - binom(2310,1)*4 + binom(2310,0)": 4,
+          "But binom(2310,4) - binom(2310,3)*4 + binom(2310,2)*6 - binom(2310,1)*4 + binom(2310,0) is equal to binom(2310,4) - binom(2310,3)*4 + binom(2310,2)*6 - binom(2310,1)*4 + binom(2310,0)": 9,
+          "Therefore, binom(2310,4) - binom(2310,3)*4 + binom(2310,2)*6 - binom(2310,1)*4 + binom(2310,0) is equal to binom(2310,4) - binom(2310,3)*4 + binom(2310,2)*6 - binom(2310,1)*4 + binom(2310,0)": 10,
+          "So, binom(2310,4) - binom(2310,3)*4 + binom(2310,2)*6 - binom(2310,1)*4 + binom(2310,0) is equal to binom(2310,4) - binom(2310,3)*4 + binom(2310,2)*6 - binom(2310,1)*4 + binom(2310,0)": 14,
+          "Thus, binom(2310,4) - binom(2310,3)*4 + binom(2310,2)*6 - binom(2310,1)*4 + binom(2310,0) is equal to binom(2310,4) - binom(2310,3)*4 + binom(2310,2)*6 - binom(2310,1)*4 + binom(2310,0)": 8,
+          "Therefore, binom(2310,4) is equal to binom(2310,4) - binom(2310,3)*4 + binom(2310,2)*6 - binom(2310,1)*4 + binom(2310,0)": 3
+        },
+        "max_sentence_repetition": 47
+      },
+      "token_diversity": 0.08417025346724055,
+      "token_diversity_last_2k": 0.044,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.06795540136912602,
+        "has_encoding_error": false,
+        "gibberish_count": 3
+      }
+    },
+    {
+      "idx": 14,
+      "problem": "",
+      "gold_answer": [
+        "033"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 24129,
+      "char_count": 114383,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 95,
+        "hmm": 3,
+        "so": 0,
+        "but": 113,
+        "actually": 1
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, the line through P parallel to AB meets \u03c9\u2081 at X and \u03c9\u2082 at Y": 3,
+          "Therefore, the tangent line is y = r\u2081 + r\u2082": 743,
+          "Similarly, the distance from (h, r\u2082) to the tangent line is r\u2081": 3,
+          "So, the tangent line is y = r\u2081 + r\u2082": 8,
+          "Therefore, the tangent line is y = R": 1094
+        },
+        "max_sentence_repetition": 1094
+      },
+      "token_diversity": 0.02838907538646442,
+      "token_diversity_last_2k": 0.004,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.02944493499908203,
+        "has_encoding_error": false,
+        "gibberish_count": 3
+      }
+    },
+    {
+      "idx": 15,
+      "problem": "",
+      "gold_answer": [
+        "719"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 20505,
+      "char_count": 73771,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 30,
+        "hmm": 1,
+        "so": 0,
+        "but": 50,
+        "actually": 0
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "But 55a + b = d(k + m)": 3,
+          "So, 55a + b = d(k + m)": 26,
+          "But 55a + b is equal to d(k + m)": 7,
+          "So, 55a + b is equal to d(k + m)": 1598,
+          "Therefore, 55a + b is equal to d(k + m)": 227,
+          "Thus, 55a + b is equal to d(k + m)": 4
+        },
+        "max_sentence_repetition": 1598
+      },
+      "token_diversity": 0.014728115093879541,
+      "token_diversity_last_2k": 0.0055,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.05422184869393122,
+        "has_encoding_error": false,
+        "gibberish_count": 1
+      }
+    },
+    {
+      "idx": 16,
+      "problem": "",
+      "gold_answer": [
+        "371"
+      ],
+      "predicted_answer": "163",
+      "is_correct": false,
+      "word_count": 5750,
+      "char_count": 28357,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 79,
+        "hmm": 11,
+        "so": 0,
+        "but": 86,
+        "actually": 7
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Hmm, not sure": 3,
+          "So, the rest of the vertices (i": 3,
+          "Therefore, |S| + |T| = 8, so |S| = |T| = 4": 3
+        },
+        "max_sentence_repetition": 3
+      },
+      "token_diversity": 0.09669565217391304,
+      "token_diversity_last_2k": 0.1365,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.020524032866664314,
+        "has_encoding_error": false,
+        "gibberish_count": 11
+      }
+    },
+    {
+      "idx": 17,
+      "problem": "",
+      "gold_answer": [
+        "104"
+      ],
+      "predicted_answer": "10",
+      "is_correct": false,
+      "word_count": 10837,
+      "char_count": 57588,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 114,
+        "hmm": 6,
+        "so": 0,
+        "but": 135,
+        "actually": 1
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, D = -107": 3,
+          "So, E coincides with D": 3,
+          "So, e is between 0 and c": 4,
+          "So, g - e =184 +4\u221a15": 3,
+          "So, 26,16,12,107": 780,
+          "**Final Answer**\nThe height of the triangle is \\boxed{10}, \\boxed{10}, \\boxed{12}, \\boxed{12}, \\boxed{12}, \\boxed{107}, \\boxed{107}": 4
+        },
+        "max_sentence_repetition": 780
+      },
+      "token_diversity": 0.10408784719018178,
+      "token_diversity_last_2k": 0.0705,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.034468986594429395,
+        "has_encoding_error": false,
+        "gibberish_count": 6
+      }
+    },
+    {
+      "idx": 18,
+      "problem": "",
+      "gold_answer": [
+        "363"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 15402,
+      "char_count": 72488,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 16,
+        "hmm": 3,
+        "so": 0,
+        "but": 8,
+        "actually": 2
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, 23 mod \\( 2^{n+1} \\) is 23 for n >=5, and 7 for n=3,4": 3,
+          "So, 23 mod \\( 2^{n+1} \\) is 23 when n >=5, which is 23 mod 32, 23 mod 64, etc": 3,
+          "So, 23 mod \\( 2^{n+1} \\) is 23 when n >=5, and 7 when n=3,4": 3,
+          "So, 23 mod \\( 2^{n+1} \\) is 23 when n >=5, and 7 otherwise": 4,
+          "Therefore, 23 mod \\( 2^{n+1} \\) is 23 when n >=5, 7 otherwise": 13,
+          "So, 23 mod \\( 2^{n+1} \\) is 23 when n >=5, 7 otherwise": 81,
+          "So, 23 mod \\(2^{n+1} \\) is 23 when n >=5, 7 otherwise": 632,
+          "Thus, the modulus is 23 when n >=5, 7 otherwise": 129,
+          "Hence, the modulus is 23 when n >=5, 7 otherwise": 20,
+          "So, the modulus is 23 when n >=5, 7 otherwise": 10,
+          "Therefore, the modulus is 23 when n >=5, 7 otherwise": 198,
+          "Thus, the modulus is 23 when n >=5, 7 is the modulus": 24,
+          "Therefore, the modulus is 23 when n >=5, 7 is the modulus": 35
+        },
+        "max_sentence_repetition": 632
+      },
+      "token_diversity": 0.01545253863134658,
+      "token_diversity_last_2k": 0.0185,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.07998565279770445,
+        "has_encoding_error": false,
+        "gibberish_count": 3
+      }
+    },
+    {
+      "idx": 19,
+      "problem": "",
+      "gold_answer": [
+        "35"
+      ],
+      "predicted_answer": "2",
+      "is_correct": false,
+      "word_count": 20770,
+      "char_count": 101739,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 380,
+        "hmm": 8,
+        "so": 0,
+        "but": 686,
+        "actually": 39
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Let me think": 3,
+          "Wait, is that true": 3,
+          "Therefore, the probability that M is in R is 1": 5,
+          "Therefore, the probability is 1": 4,
+          "But the problem says \"the probability that the midpoint of AB also lies inside this L-shaped region": 3,
+          "Therefore, the answer is 1, which is m/n, m=1, n=1, m + n=2": 4,
+          "But I think the answer is 3/4": 3,
+          "\"\n\nSo, it's the probability that the midpoint is in R": 3,
+          "Therefore, the probability is 1, which is m/n, m=1, n=1, m + n=2": 131,
+          "But M is a convex set, and R is a polygon": 3,
+          "But the problem is given as m/n, so m=1, n=1, m + n=2": 7,
+          "Wait, the problem is the same as the probability that M is in R": 7,
+          "But M is a convex set, so the probability that M is in R is 1": 126,
+          "But the problem is about the probability that the midpoint is in R": 13,
+          "But the answer is 2": 4,
+          "But the answer is 1, which is m/n, m=1, n=1, m + n=2": 3,
+          "But I think the correct answer is 3/4": 4,
+          "But the problem is about the probability that the midpoint lies inside R": 3,
+          "But the set M is the set of midpoints, so the problem is the probability that M is in R": 39,
+          "But I think that the correct answer is 3/4": 4,
+          "Wait, I think that I have made a miscalculation": 12,
+          "So, the set M is the set of midpoints, so the problem is the probability that M is in R": 5,
+          "Wait, the problem is about the probability that the midpoint is in R": 123,
+          "But I think that the correct answer is 2": 13,
+          "But I think that I have made a miscalculation": 114,
+          "But I think that is correct": 17,
+          "Therefore, the answer is 2": 113,
+          "But the set M is the set of midpoints, so the probability is the probability that M is in R": 93,
+          "But M is a convex set, so the probability is 1": 14,
+          "But the problem is about the probability of the midpoint being in R": 4
+        },
+        "max_sentence_repetition": 131
+      },
+      "token_diversity": 0.035869041887337506,
+      "token_diversity_last_2k": 0.06,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.013642752533443419,
+        "has_encoding_error": false,
+        "gibberish_count": 8
+      }
+    },
+    {
+      "idx": 20,
+      "problem": "",
+      "gold_answer": [
+        "167"
+      ],
+      "predicted_answer": "333",
+      "is_correct": false,
+      "word_count": 6378,
+      "char_count": 33236,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 87,
+        "hmm": 14,
+        "so": 0,
+        "but": 83,
+        "actually": 3
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Hmm, not helpful": 3,
+          "Multiply both sides by s^2: 4 = s^4 + 3 s^2": 4,
+          "So, s^4 + 3 s^2 - 4 = 0": 3,
+          "Similarly, s * S_n = s * S_n": 3,
+          ", up to 1000": 4
+        },
+        "max_sentence_repetition": 4
+      },
+      "token_diversity": 0.1658827218563813,
+      "token_diversity_last_2k": 0.2365,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.08213984835720303,
+        "has_encoding_error": false,
+        "gibberish_count": 14
+      }
+    },
+    {
+      "idx": 21,
+      "problem": "",
+      "gold_answer": [
+        "080"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 18466,
+      "char_count": 104814,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 117,
+        "hmm": 11,
+        "so": 0,
+        "but": 54,
+        "actually": 2
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Wait, no, wait": 3,
+          "5, which is 1:1": 3,
+          "6, which is 1:1": 28,
+          "3, which is 1:3:4": 31,
+          "Wait, 200:240:300 is 2:2": 4,
+          "So, 200, 240, 300 is 2:2": 5,
+          "So, 200:240:300 is 2:2": 6,
+          "Wait, 2:6:9 is 200, 240, 300": 3,
+          "So, 2:6:9 is 200, 240, 300": 4,
+          "So, the triangle is similar to the triangle formed by 1:3:4": 3,
+          "So, 2:6:9 is 200, 600, 900": 4,
+          "So, the triangle is similar to a triangle with sides 2:6:9, which is 200, 600, 900": 3,
+          "So, the triangle is similar to 2:6:9": 34,
+          "So, the triangle is similar to a triangle with sides 200, 600, 900": 5,
+          "So, the sides of the triangle are 200, 240, 300, which is 2:2": 4,
+          "So, the triangle is similar to 2:6:9, scaled by 100": 5,
+          "So, the triangle is similar to 2:6:9, which is 200, 600, 900": 424,
+          "So, the triangle is similar to 2:6:9, which is 2:6:9, 2:6:9, 2:6:9": 5,
+          "So, the triangle is similar to 2:6:9, which is 2:6:9": 3,
+          "Therefore, the triangle is similar to itself": 820,
+          "So, the triangle is similar to itself": 20
+        },
+        "max_sentence_repetition": 820
+      },
+      "token_diversity": 0.02453157153687859,
+      "token_diversity_last_2k": 0.0015,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.0013738622703074017,
+        "has_encoding_error": false,
+        "gibberish_count": 11
+      }
+    },
+    {
+      "idx": 22,
+      "problem": "",
+      "gold_answer": [
+        "321"
+      ],
+      "predicted_answer": "|P|^2, which is equal to the real part of P^2",
+      "is_correct": false,
+      "word_count": 17359,
+      "char_count": 90862,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 146,
+        "hmm": 17,
+        "so": 0,
+        "but": 404,
+        "actually": 15
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Compute |2 - 2\u03c9 + \u03c9^2|": 4,
+          "Therefore, the real part is equal to |P|^2": 6,
+          "But |P|^2 is equal to the product of |2 - 2\u03c9^k + \u03c9^{2k}|": 5,
+          "But the problem is to compute this real number modulo 1000": 21,
+          "But |P|^2 is a real number": 10,
+          "Thus, Re(P \\overline{P}) is equal to |P|^2": 3,
+          "Therefore, Re(P \\overline{P}) is equal to |P|^2": 6,
+          "But since |P|^2 is a real number, Re(P \\overline{P}) is equal to |P|^2": 7,
+          "But |P|^2 is a real number, Re(P \\overline{P}) is equal to |P|^2": 5,
+          "Therefore, the real number is |P|^2": 669,
+          "Therefore, the real number is equal to |P|^2": 7,
+          "But the real number is equal to |P|^2": 3,
+          "Thus, the real number is |P|^2": 26,
+          "Therefore, the real number is |P|2": 60
+        },
+        "max_sentence_repetition": 669
+      },
+      "token_diversity": 0.06590241373351,
+      "token_diversity_last_2k": 0.0155,
+      "garbled_text": {
+        "repeated_chars": [
+          "0",
+          "0"
+        ],
+        "repeated_char_count": 2,
+        "special_char_ratio": 0.07276969470185556,
+        "has_encoding_error": false,
+        "gibberish_count": 17
+      }
+    },
+    {
+      "idx": 23,
+      "problem": "",
+      "gold_answer": [
+        "385"
+      ],
+      "predicted_answer": "2",
+      "is_correct": false,
+      "word_count": 6971,
+      "char_count": 37567,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 62,
+        "hmm": 2,
+        "so": 0,
+        "but": 131,
+        "actually": 5
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, two fixed points": 6,
+          "Hence, the number of intersections is two": 5
+        },
+        "max_sentence_repetition": 6
+      },
+      "token_diversity": 0.1233682398508105,
+      "token_diversity_last_2k": 0.177,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.04607767455479543,
+        "has_encoding_error": false,
+        "gibberish_count": 2
+      }
+    },
+    {
+      "idx": 24,
+      "problem": "",
+      "gold_answer": [
+        "075"
+      ],
+      "predicted_answer": "13\u00b2 +13\u00b2 + something, but I think that 13\u00b2 +13\u00b2 +2*13*11*sqrt(3 ) + something= 169 +169 + 770*sqrt(3 ) + something= 338 + 770 sqrt(3 ) + something, which is not a perfect square",
+      "is_correct": false,
+      "word_count": 15073,
+      "char_count": 64658,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 273,
+        "hmm": 12,
+        "so": 6,
+        "but": 108,
+        "actually": 10
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Wait, 2*(3\u221a2 + 1)/3": 24,
+          "Wait, 3\u221a2 +1": 95,
+          "Wait,7\u221a2 +1": 10
+        },
+        "max_sentence_repetition": 95
+      },
+      "token_diversity": 0.08976315265706893,
+      "token_diversity_last_2k": 0.022,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.14689597574932722,
+        "has_encoding_error": false,
+        "gibberish_count": 12
+      }
+    },
+    {
+      "idx": 25,
+      "problem": "",
+      "gold_answer": [
+        "242"
+      ],
+      "predicted_answer": "PQ \u2248 174",
+      "is_correct": false,
+      "word_count": 15858,
+      "char_count": 88295,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 293,
+        "hmm": 4,
+        "so": 0,
+        "but": 190,
+        "actually": 24
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "64 / 75 \u2248 1": 5,
+          "64) to C(575,102": 3,
+          "545 degrees": 4,
+          "Compute tan(51": 3,
+          "545 degrees) \u2248 2": 3,
+          "545 degrees from DC towards DA": 4,
+          "64 / 650 \u2248 0": 6,
+          "1564)/(1 + 0": 4,
+          "248 x + 196": 6,
+          "Similarly, angle bisector from C meets AB at P": 3,
+          "3)^2 + (102": 3,
+          "So, the distance PQ is 174": 3,
+          "But, in reality, 174": 4,
+          "Wait, but 174": 18,
+          "08 is correct": 3,
+          "74 times 102": 5,
+          "08 is not equal to 102": 7,
+          "08 is equal to 102": 10,
+          "Wait, but in reality, the distance from A to D is 102": 4,
+          "08 is greater than 102": 3,
+          "Wait, but in reality, the distance from P to Q is 174": 3,
+          "08, which is equal to the distance from A to D": 3,
+          "Wait, in reality, the distance from P to Q is 174": 3,
+          "08, which is 1": 3,
+          "Wait, but 139": 4,
+          "4, which is greater than 102": 3,
+          "4 is greater than 102": 3,
+          "08, which is equal to 102": 4,
+          "74, which is correct": 3,
+          "Therefore, the answer is 174": 11,
+          "Thus, the distance PQ is 174": 95,
+          "Therefore, the distance PQ is 174": 569,
+          "But, in reality, the distance PQ is 174": 4,
+          "But, in reality, the distance from A to D is 102": 4,
+          "Hence, the distance PQ is 174": 30,
+          "Therefore, the final answer is 174": 13
+        },
+        "max_sentence_repetition": 569
+      },
+      "token_diversity": 0.07989658216672972,
+      "token_diversity_last_2k": 0.013,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.0154255620363554,
+        "has_encoding_error": false,
+        "gibberish_count": 4
+      }
+    },
+    {
+      "idx": 26,
+      "problem": "",
+      "gold_answer": [
+        "881"
+      ],
+      "predicted_answer": "881",
+      "is_correct": true,
+      "word_count": 1148,
+      "char_count": 5192,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 1,
+        "hmm": 1,
+        "so": 0,
+        "but": 3,
+        "actually": 0
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {},
+        "max_sentence_repetition": 2
+      },
+      "token_diversity": 0.22996515679442509,
+      "token_diversity_last_2k": 0.22996515679442509,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.1086286594761171,
+        "has_encoding_error": false,
+        "gibberish_count": 1
+      }
+    },
+    {
+      "idx": 27,
+      "problem": "",
+      "gold_answer": [
+        "294"
+      ],
+      "predicted_answer": "450450",
+      "is_correct": false,
+      "word_count": 3000,
+      "char_count": 15999,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 74,
+        "hmm": 5,
+        "so": 0,
+        "but": 36,
+        "actually": 1
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Wait, let me think": 3
+        },
+        "max_sentence_repetition": 3
+      },
+      "token_diversity": 0.14933333333333335,
+      "token_diversity_last_2k": 0.1755,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.010375648478029877,
+        "has_encoding_error": false,
+        "gibberish_count": 5
+      }
+    },
+    {
+      "idx": 28,
+      "problem": "",
+      "gold_answer": [
+        "191"
+      ],
+      "predicted_answer": "\\dfrac{48",
+      "is_correct": true,
+      "word_count": 9532,
+      "char_count": 50160,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 207,
+        "hmm": 1,
+        "so": 0,
+        "but": 128,
+        "actually": 9
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Wait, perhaps the number of favorable arrangements is equal to the number of ways to choose 5 positions such that each is opposite to a woman, multiplied by the number of ways to assign the men and women": 4,
+          "Wait, but if we fix the positions, the number of ways is equal to the number of ways to choose 5 positions such that each is opposite to a woman, multiplied by the number of ways to assign the men and women": 4,
+          "Wait, but since each position is opposite to another, the number of ways is equal to the number of ways to choose 5 positions such that each is opposite to a woman, multiplied by the number of ways to assign the men and women": 4,
+          "Wait, but since each position is opposite to another, the number of ways to assign the men and women is equal to the number of ways to choose 5 positions such that each is opposite to a woman, multiplied by the number of ways to assign the men and women": 3,
+          "Wait, but the number of ways to assign the men and women is equal to the number of ways to choose 5 positions such that each is opposite to a woman, multiplied by the number of ways to assign the men and women": 4
+        },
+        "max_sentence_repetition": 4
+      },
+      "token_diversity": 0.061791859001258914,
+      "token_diversity_last_2k": 0.1515,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.00388755980861244,
+        "has_encoding_error": false,
+        "gibberish_count": 1
+      }
+    },
+    {
+      "idx": 29,
+      "problem": "",
+      "gold_answer": [
+        "125"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 23258,
+      "char_count": 116500,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 333,
+        "hmm": 16,
+        "so": 0,
+        "but": 252,
+        "actually": 26
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Wait, is that correct": 3,
+          "Wait, let me think": 3,
+          "Similarly, sum of areas of PBC and PCD is equal to area of triangle PBC + triangle PCD": 3,
+          "But in reality, the area of the rhombus is equal to the sum of the areas of the four triangles": 6,
+          "But, in reality, the area of the rhombus is equal to the sum of the areas of the four triangles": 5,
+          "Wait, but in reality, the area of the rhombus is equal to the sum of the areas of the four triangles": 9,
+          "Wait, no, actually, the area of the rhombus is equal to the sum of the areas of the four triangles": 6,
+          "Wait, in reality, the side lengths must be equal": 4,
+          "Therefore, the side length is 5": 3,
+          "Wait, in reality, the side length is equal to the distance from P to the sides": 6,
+          "Wait, but in reality, the side length is equal to the distance from P to the sides": 4,
+          "Therefore, the side length is equal to the distance from P to the sides": 561,
+          "So, the side length is equal to the distance from P to the sides": 3,
+          "Therefore, side length is equal to the distance from P to the sides": 68,
+          "Thus, side length is equal to the distance from P to the sides": 18,
+          "So, side length is equal to the distance from P to the sides": 6,
+          "Hence, side length is equal to the distance from P to the sides": 8
+        },
+        "max_sentence_repetition": 561
+      },
+      "token_diversity": 0.05103620259695588,
+      "token_diversity_last_2k": 0.007,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.01860085836909871,
+        "has_encoding_error": false,
+        "gibberish_count": 16
+      }
+    },
+    {
+      "idx": 30,
+      "problem": "",
+      "gold_answer": [
+        "113"
+      ],
+      "predicted_answer": "\\frac{1",
+      "is_correct": false,
+      "word_count": 14892,
+      "char_count": 72199,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 132,
+        "hmm": 8,
+        "so": 0,
+        "but": 70,
+        "actually": 4
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Similarly, (462 -63\u221a21)^2=462^2 -2*462*63\u221a21 + (63\u221a21)^2=212,464 -56,042\u221a21 +83,349=295,813 -56,042\u221a21": 3,
+          "We have to find the distance from P to the line \u03c9, where P is on \u03c9, and AP is the circle tangent to \u03c9 at B, and let D be the intersection of AD and AD2": 253,
+          "We have to find the distance from P to the line \ufffdi\u03c9, where P is on \u03c9, and AP is the circle tangent to \u03c9 at B, and let D be the intersection of AD and AD2": 4
+        },
+        "max_sentence_repetition": 253
+      },
+      "token_diversity": 0.0848777867311308,
+      "token_diversity_last_2k": 0.044,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.03144087868253023,
+        "has_encoding_error": true,
+        "gibberish_count": 8
+      }
+    },
+    {
+      "idx": 31,
+      "problem": "",
+      "gold_answer": [
+        "051"
+      ],
+      "predicted_answer": "4",
+      "is_correct": false,
+      "word_count": 3398,
+      "char_count": 18575,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 40,
+        "hmm": 5,
+        "so": 0,
+        "but": 68,
+        "actually": 5
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {},
+        "max_sentence_repetition": 2
+      },
+      "token_diversity": 0.12507357268981753,
+      "token_diversity_last_2k": 0.1535,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.006083445491251682,
+        "has_encoding_error": false,
+        "gibberish_count": 5
+      }
+    },
+    {
+      "idx": 32,
+      "problem": "",
+      "gold_answer": [
+        "012"
+      ],
+      "predicted_answer": "1,453",
+      "is_correct": false,
+      "word_count": 7178,
+      "char_count": 41229,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 154,
+        "hmm": 2,
+        "so": 0,
+        "but": 43,
+        "actually": 8
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "}{m} \\) is a perfect square": 3,
+          "Wait, 1,453 is greater than 1,453": 41,
+          "But 1,453 is greater than 1,453": 4,
+          "Hence, 1,453 is greater than 1,453": 4,
+          "So, 1,453 is greater than 1,453": 5
+        },
+        "max_sentence_repetition": 41
+      },
+      "token_diversity": 0.1277514628030092,
+      "token_diversity_last_2k": 0.031,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.046278105217201486,
+        "has_encoding_error": false,
+        "gibberish_count": 2
+      }
+    },
+    {
+      "idx": 33,
+      "problem": "",
+      "gold_answer": [
+        "127"
+      ],
+      "predicted_answer": "83",
+      "is_correct": false,
+      "word_count": 8755,
+      "char_count": 42160,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 145,
+        "hmm": 1,
+        "so": 0,
+        "but": 105,
+        "actually": 19
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Therefore, the distance from O to C is d = |OP| + |PC| = 11 + 3 = 14": 3,
+          "Therefore, d = 14": 3,
+          "Wait, that seems plausible": 3,
+          "85, which is not integer": 3,
+          "So, 811 and 56 are co-prime": 3
+        },
+        "max_sentence_repetition": 3
+      },
+      "token_diversity": 0.08349514563106795,
+      "token_diversity_last_2k": 0.1725,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.04191176470588235,
+        "has_encoding_error": false,
+        "gibberish_count": 1
+      }
+    },
+    {
+      "idx": 34,
+      "problem": "",
+      "gold_answer": [
+        "144"
+      ],
+      "predicted_answer": "8",
+      "is_correct": false,
+      "word_count": 6296,
+      "char_count": 32428,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 205,
+        "hmm": 0,
+        "so": 0,
+        "but": 120,
+        "actually": 7
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Wait, maybe I need to think in terms of permutations": 3,
+          "Wait, but 2 is less than 3^12, so that can't be": 4,
+          "So, the number of colorings is 8": 44,
+          "Wait, 8 is equal to 2^3, so the number of colorings is 8": 33,
+          "Wait, so the number of colorings is 8": 13,
+          "Wait, but 8 is equal to 2^3, so the number of colorings is 8": 5,
+          "Therefore, the number of colorings is 8": 13,
+          "So, the answer is 8": 7,
+          "Hence, the number of colorings is 8": 4
+        },
+        "max_sentence_repetition": 44
+      },
+      "token_diversity": 0.07941550190597205,
+      "token_diversity_last_2k": 0.0805,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.0051190329345010485,
+        "has_encoding_error": false,
+        "gibberish_count": 0
+      }
+    },
+    {
+      "idx": 35,
+      "problem": "",
+      "gold_answer": [
+        "601"
+      ],
+      "predicted_answer": "576",
+      "is_correct": false,
+      "word_count": 7170,
+      "char_count": 44020,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 17,
+        "hmm": 7,
+        "so": 0,
+        "but": 33,
+        "actually": 1
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          ", up to 99\u00b2 = 9800, and 100\u00b2 = 10000, and 101\u00b2 = 10201, and so on": 25,
+          "**Final Answer**\nThe square of 24 is \\boxed{576}, and 25\u00b2 is 625, etc": 22
+        },
+        "max_sentence_repetition": 25
+      },
+      "token_diversity": 0.16499302649930264,
+      "token_diversity_last_2k": 0.1735,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.08346206269877328,
+        "has_encoding_error": false,
+        "gibberish_count": 7
+      }
+    },
+    {
+      "idx": 36,
+      "problem": "",
+      "gold_answer": [
+        "289"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 10575,
+      "char_count": 44225,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 38,
+        "hmm": 2,
+        "so": 0,
+        "but": 34,
+        "actually": 4
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, 38 is not achievable": 3,
+          "5, which is not integer": 3,
+          "Wait, 6\u00d75\u00d72=60, duplicates": 4,
+          "70 is 5\u00d77\u00d72=70, duplicates": 3,
+          "75 is 5\u00d75\u00d73=75, duplicates": 4,
+          "5, not integer": 4,
+          "104 is 104\u00d71, too big": 3,
+          "105 is 5\u00d77\u00d73=105, duplicates": 3,
+          "105 is 105\u00d71, too big": 5,
+          "108 is 4\u00d74\u00d7(108/16)=108/4=27, not integer": 3,
+          "108 is 8\u00d78\u00d7(108/64)=108/8=13": 3,
+          "108 is 108\u00d71, too big": 4,
+          "108 is 6\u00d76\u00d73, duplicates": 3,
+          "120 is 6\u00d76\u00d7(120/36)=120/6=20, not integer": 6,
+          "120 is 8\u00d78\u00d7(120/64)=120/8=15, not integer": 6,
+          "120 is 10\u00d710\u00d7(120/100)=120/10=12, not integer": 6,
+          "120 is 12\u00d710\u00d7(120/120)=120/12=10, not integer": 7,
+          "120 is 5\u00d75\u00d724, too big": 5,
+          "126 is 3\u00d73\u00d714=126, duplicates": 5,
+          "126 is 6\u00d76\u00d7(126/36)=126/6=21, not integer": 5,
+          "126 is 7\u00d77\u00d7(126/49)=126/7=18, not integer": 5,
+          "126 is 9\u00d79\u00d7(126/81)=126/9=14, not integer": 5,
+          "126 is 12\u00d710": 10,
+          "126 is 14\u00d79, duplicates": 5,
+          "5\u00d712, too big": 10,
+          "126 is 21\u00d76, too big": 5,
+          "168 is 4\u00d74\u00d7(168/16)=168/4=42, not integer": 3,
+          "168 is 6\u00d76\u00d7(168/36)=168/6=28, not integer": 7,
+          "168 is 7\u00d77\u00d7(168/49)=168/7=24, not integer": 7,
+          "168 is 8\u00d78\u00d7(168/64)=168/8=21, not integer": 7,
+          "168 is 10\u00d710\u00d7(168/100)=168/10=16": 7,
+          "8, not integer": 7,
+          "168 is 12\u00d714, duplicates": 11,
+          "168 is 14\u00d79, duplicates": 7,
+          "168 is 168\u00d71, too big": 8,
+          "168 is 16\u00d710": 5,
+          "168 is 21\u00d78, duplicates": 5,
+          "168 is 24\u00d77, duplicates": 5,
+          "168 is 28\u00d76, duplicates": 5,
+          "168 is 32\u00d75": 5,
+          "25, too big": 5,
+          "168 is 36\u00d74": 5,
+          ", duplicates": 10,
+          "168 is 42\u00d74": 5,
+          "168 is 56\u00d73, duplicates": 5,
+          "168 is 84\u00d72, duplicates": 5,
+          "So, 168 is not achievable": 3
+        },
+        "max_sentence_repetition": 11
+      },
+      "token_diversity": 0.07394799054373523,
+      "token_diversity_last_2k": 0.0055,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.027654041831543245,
+        "has_encoding_error": false,
+        "gibberish_count": 2
+      }
+    },
+    {
+      "idx": 37,
+      "problem": "",
+      "gold_answer": [
+        "349"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 11964,
+      "char_count": 51432,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 16,
+        "hmm": 16,
+        "so": 0,
+        "but": 14,
+        "actually": 2
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, \\( p = 2b^2 + 2bk + k^2 \\)": 3,
+          "Check triangle conditions": 3,
+          "Doesn't satisfy": 10,
+          "Condition holds": 10
+        },
+        "max_sentence_repetition": 10
+      },
+      "token_diversity": 0.09486793714476764,
+      "token_diversity_last_2k": 0.0005,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.10775392751594338,
+        "has_encoding_error": false,
+        "gibberish_count": 16
+      }
+    },
+    {
+      "idx": 38,
+      "problem": "",
+      "gold_answer": [
+        "021"
+      ],
+      "predicted_answer": "21",
+      "is_correct": true,
+      "word_count": 1970,
+      "char_count": 9800,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 13,
+        "hmm": 2,
+        "so": 0,
+        "but": 8,
+        "actually": 5
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {},
+        "max_sentence_repetition": 2
+      },
+      "token_diversity": 0.23096446700507614,
+      "token_diversity_last_2k": 0.23096446700507614,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.04336734693877551,
+        "has_encoding_error": false,
+        "gibberish_count": 2
+      }
+    },
+    {
+      "idx": 39,
+      "problem": "",
+      "gold_answer": [
+        "023"
+      ],
+      "predicted_answer": "42",
+      "is_correct": false,
+      "word_count": 7679,
+      "char_count": 38813,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 60,
+        "hmm": 6,
+        "so": 0,
+        "but": 116,
+        "actually": 7
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "\\( \\frac{x^2}{a^2} + \\frac{y^2}{a^2 - 16} = 1 \\)\n2": 3,
+          "Hmm, not sure": 3
+        },
+        "max_sentence_repetition": 3
+      },
+      "token_diversity": 0.13074619091027478,
+      "token_diversity_last_2k": 0.2175,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.07149666348903717,
+        "has_encoding_error": false,
+        "gibberish_count": 6
+      }
+    },
+    {
+      "idx": 40,
+      "problem": "",
+      "gold_answer": [
+        "104"
+      ],
+      "predicted_answer": "\\frac{5",
+      "is_correct": false,
+      "word_count": 9242,
+      "char_count": 47187,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 116,
+        "hmm": 7,
+        "so": 0,
+        "but": 155,
+        "actually": 8
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "But, since I don't know \\( V \\) and \\( A_{\\text{total}} \\), I can't compute \\( r \\)": 4
+        },
+        "max_sentence_repetition": 4
+      },
+      "token_diversity": 0.12919281540792035,
+      "token_diversity_last_2k": 0.1255,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.08493864835653887,
+        "has_encoding_error": false,
+        "gibberish_count": 7
+      }
+    },
+    {
+      "idx": 41,
+      "problem": "",
+      "gold_answer": [
+        "809"
+      ],
+      "predicted_answer": "809",
+      "is_correct": true,
+      "word_count": 3075,
+      "char_count": 16484,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 58,
+        "hmm": 6,
+        "so": 0,
+        "but": 13,
+        "actually": 1
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, n=1 is a winning position": 3,
+          "So, n=2 is a losing position for Alice, meaning Bob can win": 3,
+          "So, n=2,4,7,11,12,14,17, etc": 5
+        },
+        "max_sentence_repetition": 5
+      },
+      "token_diversity": 0.17268292682926828,
+      "token_diversity_last_2k": 0.203,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.025782577044406698,
+        "has_encoding_error": false,
+        "gibberish_count": 6
+      }
+    },
+    {
+      "idx": 42,
+      "problem": "",
+      "gold_answer": [
+        "585"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 16213,
+      "char_count": 85808,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 44,
+        "hmm": 2,
+        "so": 0,
+        "but": 20,
+        "actually": 1
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, 446 is not a palindrome in base ten": 4,
+          "So, 111 base eight is 73, not a palindrome": 917,
+          "Similarly, 111 base eight is 73, not a palindrome": 4,
+          "So, 11111111 base eight is 73, not a palindrome": 262,
+          "Therefore, 11111111 base eight is 73, not a palindrome": 283,
+          "Therefore, 11111111 base eight is 73, which is a palindrome, so it is a yes": 3,
+          "Therefore, 11111111 base eight is 73, which is a palindrome": 28
+        },
+        "max_sentence_repetition": 917
+      },
+      "token_diversity": 0.022944550669216062,
+      "token_diversity_last_2k": 0.01,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.0022958232332649636,
+        "has_encoding_error": false,
+        "gibberish_count": 2
+      }
+    },
+    {
+      "idx": 43,
+      "problem": "",
+      "gold_answer": [
+        "227"
+      ],
+      "predicted_answer": "111",
+      "is_correct": false,
+      "word_count": 5186,
+      "char_count": 28043,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 68,
+        "hmm": 12,
+        "so": 0,
+        "but": 84,
+        "actually": 0
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, 7b \u2261c mod9": 3,
+          "So, 7b -c=9m": 6,
+          "So, that's consistent": 3,
+          "So, 7b \u2261k mod9": 3,
+          "So, m=(7b -c)/9": 3,
+          "c must be 0-9": 4,
+          "So, 99a=71b +8c": 4,
+          "But the problem says \"Find the three-digit positive integer": 3,
+          "So, 227 is not equal to 272\u2089": 7,
+          "So, 11a \u226510b": 3,
+          "So, the numbers are 111,222,": 3,
+          "So, 111 base ten is 111 base nine": 3,
+          "Similarly, 222 base ten is 222 base nine": 5
+        },
+        "max_sentence_repetition": 7
+      },
+      "token_diversity": 0.19051291939838025,
+      "token_diversity_last_2k": 0.219,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.0572335342153122,
+        "has_encoding_error": false,
+        "gibberish_count": 12
+      }
+    },
+    {
+      "idx": 44,
+      "problem": "",
+      "gold_answer": [
+        "125"
+      ],
+      "predicted_answer": "0",
+      "is_correct": false,
+      "word_count": 9935,
+      "char_count": 56825,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 171,
+        "hmm": 9,
+        "so": 0,
+        "but": 173,
+        "actually": 14
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, 2|a| = sqrt(21) and 2|b| = sqrt(31)": 3,
+          "So, |a| and |b| are sqrt(21)/2 and sqrt(31)/2": 4,
+          "So, |a| = sqrt(21)/2, |b| = sqrt(31)/2": 7,
+          "5113 / 2 \u2248 12": 5,
+          "Then, the area of the rhombus is |a \u00d7 b| = |a||b| sin(theta) = (sqrt(21)/2)(sqrt(31)/2) sin(theta) = sqrt(651)/4 sin(theta)": 3,
+          "So, something is wrong": 3,
+          "So, 2|a| and 2|b| are the face diagonals, and the space diagonals are sqrt(21) and sqrt(31)": 3,
+          "Then, the area of the rhombus is |a \u00d7 b| = |a||b| sin(theta) = (sqrt(21)/2)(sqrt(31)/2) sin(theta) = sqrt(651)/4 sin(theta) = (d1*d2)/2 = (21*31)/2 = 333/2 = 166": 3,
+          "Thus, sin(theta) = (333/2) / (sqrt(651)/4) = (333/2) * (4 / sqrt(651)) = (333 * 2) / sqrt(651) \u2248 666 / 25": 14,
+          "Then, the area of the rhombus is |a \u00d7 b| = |a||b| sin(theta) = (sqrt(21)/2)(sqrt(31)/2) sin(theta) = sqrt(651)/4 sin(theta) = (d1*d2)/2 = (21*31)/2 = 333/2": 16,
+          "So, sqrt(651)/4 sin(theta) = 333/2": 3,
+          "Therefore, |a| and |b| are sqrt(21)/2 and sqrt(31)/2": 3,
+          "15, which is impossible": 19,
+          "Thus, sqrt(651)/4 sin(theta) = 333/2": 3,
+          "Therefore, sin(theta) = (333/2) / (sqrt(651)/4) = (333/2) * (4 / sqrt(651)) = (333 * 2) / sqrt(651) \u2248 666 / 25": 6,
+          "But the problem is correct, so my model is wrong": 13,
+          "Therefore, the problem is impossible, meaning that the volume is zero": 13,
+          "Therefore, 2|a| and 2|b| are the face diagonals, and the space diagonals are sqrt(52)": 4,
+          "Then, |a| and |b| are sqrt(21)/2 and sqrt(31)/2": 10,
+          "Wait, perhaps the diagonals of the face are the diagonals of the parallelogram faces are 2|a| and 2|b|, and the space diagonals are sqrt(21^2 + 31^2) = sqrt(52)": 6
+        },
+        "max_sentence_repetition": 19
+      },
+      "token_diversity": 0.08374433819828887,
+      "token_diversity_last_2k": 0.0935,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.06356357237131544,
+        "has_encoding_error": false,
+        "gibberish_count": 9
+      }
+    },
+    {
+      "idx": 45,
+      "problem": "",
+      "gold_answer": [
+        "197"
+      ],
+      "predicted_answer": "100",
+      "is_correct": false,
+      "word_count": 11754,
+      "char_count": 62665,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 167,
+        "hmm": 5,
+        "so": 0,
+        "but": 163,
+        "actually": 1
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "2024 circles of radius 1 can be arranged in the same manner": 3,
+          "Similarly, the inradius of the triangle formed by 2024 circles of radius 1 is 1*(1 + k + k^2 +": 5,
+          "+ k^{2023})": 18,
+          "So, 34*(1 + k +": 5,
+          "+ k^8) = 1*(1 + k +": 7,
+          "Similarly, the inradius of the triangle formed by 2024 circles of radius 1 is 1*(1 + k +": 9,
+          "+ k^8) = 1 + k +": 21,
+          "+ k^8), and the inradius of the triangle formed by 2024 circles of radius 1 is 1*(1 + k +": 3,
+          "But 34*(1 + k +": 3,
+          "Similarly, the chain of 2024 circles of radius 1 is 1, 1k, 1k^2,": 3,
+          ", 1k^{2023}": 3,
+          "+ k^{2023}\n\nSo, 34*(1 + k +": 3,
+          "+ k^8) = 34 + 34k +": 7,
+          "Similarly, 1 + k +": 5,
+          "+ 34k^8 = 1 + k +": 6,
+          "Therefore, my approach is wrong": 3,
+          "So, 34 + 34k +": 3,
+          "Wait, 10^2 is 100, and 34^10 is 34^10": 3,
+          "Therefore, 10^2 is 100, and 34^10 is 34^10": 5,
+          "But 10^2 is 100, and 34^10 is 34^10": 4,
+          "**Final Answer**\nThe number 10\u00b2 is 100 and 34^10 is 34^10": 3,
+          "Thus, the final answer is:\n\n\\boxed{100} and \\boxed{34^{10}}": 3
+        },
+        "max_sentence_repetition": 21
+      },
+      "token_diversity": 0.06559469116896376,
+      "token_diversity_last_2k": 0.044,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.06881034070055055,
+        "has_encoding_error": false,
+        "gibberish_count": 5
+      }
+    },
+    {
+      "idx": 46,
+      "problem": "",
+      "gold_answer": [
+        "150"
+      ],
+      "predicted_answer": "28",
+      "is_correct": false,
+      "word_count": 11348,
+      "char_count": 49068,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 66,
+        "hmm": 9,
+        "so": 0,
+        "but": 134,
+        "actually": 5
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, S = 5 r^2": 3
+        },
+        "max_sentence_repetition": 3
+      },
+      "token_diversity": 0.087328163553049,
+      "token_diversity_last_2k": 0.122,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.0524781935273498,
+        "has_encoding_error": false,
+        "gibberish_count": 9
+      }
+    },
+    {
+      "idx": 47,
+      "problem": "",
+      "gold_answer": [
+        "004"
+      ],
+      "predicted_answer": "\\text{Correct",
+      "is_correct": false,
+      "word_count": 11542,
+      "char_count": 73684,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 210,
+        "hmm": 6,
+        "so": 0,
+        "but": 78,
+        "actually": 3
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Denominator=30": 4,
+          "Wait, so formula is wrong": 3,
+          "So, 623,332,884 /30=20,777,429": 3,
+          ", which is wrong": 4,
+          "Wait, the formula is Sum_{k=1}^n k^4 = [n(n+1)(2n+1)(3n^2 +3n -1)] /30": 6,
+          "Wait, no, the formula is correct, so my application is wrong": 4,
+          ", which is wrong, but formula is correct, so my application is wrong": 4,
+          "So, the formula is correct, so the formula is correct, so my application is wrong": 5,
+          "So, formula is correct, so formula is correct, so my application is wrong": 58,
+          "Therefore, the formula is correct, so formula is correct, so my application is wrong": 3,
+          "Wait, I think, I must have messed up in the formula": 12,
+          "Wait, I think, the formula is correct, so formula is correct, so my application is wrong, so, formula is correct, so formula is correct, so my application is wrong": 3,
+          "Therefore, formula is correct, so formula is correct, so my application is wrong": 394,
+          "Thus, formula is correct, so formula is correct, so my application is wrong": 12
+        },
+        "max_sentence_repetition": 394
+      },
+      "token_diversity": 0.0758100849072951,
+      "token_diversity_last_2k": 0.037,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.02860865316758048,
+        "has_encoding_error": false,
+        "gibberish_count": 6
+      }
+    },
+    {
+      "idx": 48,
+      "problem": "",
+      "gold_answer": [
+        "607"
+      ],
+      "predicted_answer": "22",
+      "is_correct": false,
+      "word_count": 5627,
+      "char_count": 31669,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 132,
+        "hmm": 1,
+        "so": 0,
+        "but": 144,
+        "actually": 5
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Wait, no, the number of pairs of lines is 780, which is equal to the number of pairs of lines": 3,
+          "So, T = x + y + z + a + b": 3,
+          "But 173 is not equal to 780": 3,
+          "But in our problem, we have:\n\nSum_{p}(C(k_p,2))=173": 3,
+          "But 173 is much less than 780": 8,
+          "Wait, no, the number of pairs of lines is 780, which is equal to Sum_{p}(C(k_p,2))": 4,
+          "But in our problem, we are given that the number of intersection points with k_p lines is y=3, z=4, a=5, b=6": 3,
+          "So, if we have T intersection points, each with k_p lines, then Sum_{p}(C(k_p,2))=780": 3,
+          "But in our problem, we have y=3, z=4, a=5, b=6, so Sum_{p}(C(k_p,2))=173": 6,
+          "So, the total number of intersection points is T = x + y + z + a + b": 4,
+          "But in our problem, we have Sum_{p}(C(k_p,2))=173": 3,
+          "But also, Sum_{p}(C(k_p,2))=780": 5,
+          "But also, the number of pairs of lines is 780, which is equal to Sum_{p}(C(k_p,2))": 3
+        },
+        "max_sentence_repetition": 8
+      },
+      "token_diversity": 0.10165274569042118,
+      "token_diversity_last_2k": 0.1525,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.028987337775111307,
+        "has_encoding_error": false,
+        "gibberish_count": 1
+      }
+    },
+    {
+      "idx": 49,
+      "problem": "",
+      "gold_answer": [
+        "751"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 25326,
+      "char_count": 126680,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 44,
+        "hmm": 0,
+        "so": 0,
+        "but": 54,
+        "actually": 1
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, the vertical plane is a vertical face, and the vertical face is perpendicular to P": 3,
+          "So, the vertical face is a vertical rectangle, and the vertical face is perpendicular to P": 4,
+          "So, the vertical plane is a vertical face, and the vertical plane is perpendicular to P": 3,
+          "So, the vertical face is a square": 6,
+          "So, the vertical face is a square, with sides of length s, and diagonals of length s*sqrt(2)": 3,
+          "So, the vertical face is a square, with sides AB, BC, CD, DA, each of length s, and diagonals AC and BD of length s*sqrt(2)": 3,
+          "So, the vertical face is a square, and the square is in a vertical plane, which is perpendicular to P": 749,
+          "So, the vertical face is a vertical square, and the vertical plane is a vertical face, perpendicular to P": 3,
+          "So, the vertical face is a square, and the vertical face is perpendicular to P": 4,
+          "Therefore, the height of the vertical face is 5 units, and the side is 15 units": 3,
+          "So, the height of the vertical face is 5 units, and the side is 15 units": 43,
+          "Therefore, the height of the vertical face is 5 units, and the side is 16 units": 37,
+          "So, the height of the vertical face is 5 units, and the side is 16 units": 40,
+          "Thus, the height of the vertical face is 5 units, and the side is 16 units": 25,
+          "Hence, the height of the vertical face is 5 units, and the side is 16 units": 6,
+          "Therefore, the height of the vertical face is 1 unit, and the side is 16 units": 3,
+          "Hence, the height of the vertical face is 1 unit, and the side is 1 unit, and the side is 16 units": 3,
+          "Thus, the height of the vertical face is 1 unit, and the side is 1 unit, and the side is 16 units": 6,
+          "So, the height of the vertical face is 1 unit, and the side is 1 unit, and the side is 16 units": 4,
+          "Therefore, the height of the vertical face is 1 unit, and the side is 1 unit, and the side is 16 units": 11
+        },
+        "max_sentence_repetition": 749
+      },
+      "token_diversity": 0.015399194503672116,
+      "token_diversity_last_2k": 0.0135,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.0010262077676034102,
+        "has_encoding_error": false,
+        "gibberish_count": 0
+      }
+    },
+    {
+      "idx": 50,
+      "problem": "",
+      "gold_answer": [
+        "125"
+      ],
+      "predicted_answer": "13",
+      "is_correct": false,
+      "word_count": 6804,
+      "char_count": 37966,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 95,
+        "hmm": 1,
+        "so": 0,
+        "but": 59,
+        "actually": 5
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "When Azar plays Carl, Azar wins with probability 2/3": 4,
+          "When either Azar or Carl plays against Jon or Sergey, Azar or Carl wins with probability 3/4": 4,
+          "So, these are conditional probabilities": 3,
+          "Similarly, when Carl plays Jon, Carl wins with 2/3, so Jon loses with 1/3": 3,
+          "Similarly, if Azar plays Jon, Azar's probability of winning is 2/3, so Jon's probability of winning is 1/3": 4,
+          "If Carl plays Jon, Carl's probability of winning is 2/3, so Jon's probability of winning is 1/3": 4,
+          "Wait, but in the final, the opponents are two players, one from {Azar, Carl} and one from {Jon, Sergey}": 3,
+          "So, the probability that Carl wins the tournament is 4/9": 4
+        },
+        "max_sentence_repetition": 4
+      },
+      "token_diversity": 0.068342151675485,
+      "token_diversity_last_2k": 0.1275,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.01374914397092135,
+        "has_encoding_error": false,
+        "gibberish_count": 1
+      }
+    },
+    {
+      "idx": 51,
+      "problem": "",
+      "gold_answer": [
+        "023"
+      ],
+      "predicted_answer": "19",
+      "is_correct": false,
+      "word_count": 5115,
+      "char_count": 25686,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 52,
+        "hmm": 3,
+        "so": 0,
+        "but": 49,
+        "actually": 9
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {},
+        "max_sentence_repetition": 2
+      },
+      "token_diversity": 0.1450635386119257,
+      "token_diversity_last_2k": 0.213,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.04426535856108386,
+        "has_encoding_error": false,
+        "gibberish_count": 3
+      }
+    },
+    {
+      "idx": 52,
+      "problem": "",
+      "gold_answer": [
+        "112"
+      ],
+      "predicted_answer": "112",
+      "is_correct": true,
+      "word_count": 998,
+      "char_count": 5306,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 10,
+        "hmm": 2,
+        "so": 0,
+        "but": 13,
+        "actually": 1
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {},
+        "max_sentence_repetition": 2
+      },
+      "token_diversity": 0.2985971943887776,
+      "token_diversity_last_2k": 0.2985971943887776,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.057105163965322274,
+        "has_encoding_error": false,
+        "gibberish_count": 2
+      }
+    },
+    {
+      "idx": 53,
+      "problem": "",
+      "gold_answer": [
+        "459"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 26929,
+      "char_count": 137637,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 24,
+        "hmm": 1,
+        "so": 3,
+        "but": 28,
+        "actually": 1
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "But, how to model this": 3,
+          "So, the perimeter is 219 + b + c": 4,
+          "Therefore, the perimeter is a polygon, and the perimeter is the sum of the edges": 116,
+          "So, the perimeter is a polygon, and the perimeter is the sum of the edges": 1216,
+          "Thus, the perimeter is a polygon, and the perimeter is the sum of the edges": 61,
+          "Therefore, the perimeter is a polygon, and the perimeter is the sum of the edges of the sides": 5,
+          "Thus, the perimeter is a polygon, and the perimeter is the sum of the edges of the sides": 4,
+          "So, the perimeter is a polygon, and the perimeter is the sum of the edges of the sides": 9,
+          "Therefore, the perimeter is the sum of the edges of the sides": 4,
+          "So, the perimeter is the sum of the edges of the sides": 5,
+          "So, the perimeter is the sum of the edges of the sides of the polygon": 5,
+          "Therefore, the perimeter is the sum of the edges of the sides of the polygon": 10
+        },
+        "max_sentence_repetition": 1216
+      },
+      "token_diversity": 0.015002413754688254,
+      "token_diversity_last_2k": 0.0165,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.0018018410747110151,
+        "has_encoding_error": false,
+        "gibberish_count": 1
+      }
+    },
+    {
+      "idx": 54,
+      "problem": "",
+      "gold_answer": [
+        "033"
+      ],
+      "predicted_answer": "10",
+      "is_correct": false,
+      "word_count": 8211,
+      "char_count": 33646,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 67,
+        "hmm": 9,
+        "so": 0,
+        "but": 94,
+        "actually": 1
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Similarly, c\u00b2 = y(2 - z), d\u00b2 = z(2 - y), e\u00b2 = z(2 - x), f\u00b2 = x(2 - z)": 3,
+          "Similarly, t \u2248 0": 3,
+          "But they don't satisfy": 3
+        },
+        "max_sentence_repetition": 3
+      },
+      "token_diversity": 0.1247107538667641,
+      "token_diversity_last_2k": 0.203,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.08378410509421626,
+        "has_encoding_error": false,
+        "gibberish_count": 9
+      }
+    },
+    {
+      "idx": 55,
+      "problem": "",
+      "gold_answer": [
+        "204"
+      ],
+      "predicted_answer": "120",
+      "is_correct": false,
+      "word_count": 7201,
+      "char_count": 31723,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 95,
+        "hmm": 1,
+        "so": 0,
+        "but": 103,
+        "actually": 1
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Find the number of minutes the walk takes her, including the \\( t \\) minutes spent in the coffee shop": 3,
+          "Wait, that can't be": 4,
+          "So, 9 / (s + 0": 3,
+          "5) = 9 / (s + 2)": 4,
+          "But walking time is 9 / s and 9 / (s + 2)": 4,
+          "So, contradiction": 3,
+          "When she walks at s + 2 km/h, the total time she takes her 2 hours and 24 minutes, including t minutes spent in the coffee shop": 3,
+          "When she walks at s + 1/2 km/h, the total time she takes her 3 hours and 45 minutes, including t minutes spent in the coffee shop": 3,
+          "When she walks at s + 1/2, total time is 3 h 45 min, including t": 3,
+          "So, when she walks at s + 2, total time is 2 h 24 min, which includes t": 3,
+          "Similarly, when she walks at s + 1/2, total time is 3 h 45 min, which includes t": 3,
+          "So, 9 / s \u2260 9 / (s + 1/2)": 4,
+          "So, total time is walking time + t": 10,
+          "But walking time is different, so 2 h 24 - t \u2260 3 h 45 - t": 3,
+          "But walking time is 9 / s and 9 / (s + 1/2)": 4,
+          "So, the total time is different, but both include t": 3,
+          "But walking time is different, so total time is different, but both include t": 3,
+          "5 / (s (s + 0": 3
+        },
+        "max_sentence_repetition": 10
+      },
+      "token_diversity": 0.08957089293153729,
+      "token_diversity_last_2k": 0.148,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.05235948680767897,
+        "has_encoding_error": false,
+        "gibberish_count": 1
+      }
+    },
+    {
+      "idx": 56,
+      "problem": "",
+      "gold_answer": [
+        "247"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 9470,
+      "char_count": 61300,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 247,
+        "hmm": 12,
+        "so": 0,
+        "but": 141,
+        "actually": 4
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "015625)= approx 15": 5,
+          "Wait, that can't be": 4,
+          "015625)=sqrt(262": 3,
+          "Combine like terms:\n\nx\u00b2 +36x\u00b2=37x\u00b2": 4,
+          "So, 37x\u00b2 -1377": 5,
+          "6765625 -69": 5,
+          "Wait, this is getting too messy": 4,
+          "Compute 4*9312*119=4*1,097, 128=4,388,512": 4,
+          "624\u2248 AQ*(65/8)^2": 3,
+          "Thus, R^2=8t^2 -28t +169": 3,
+          "Thus, 8t^2 -28t +169=34": 3,
+          "Thus, 8t^2 -28t +169=155": 197,
+          "Thus, 8t^2 -28t= -13": 142,
+          "Wait, 8t^2 -28t +169=155": 3
+        },
+        "max_sentence_repetition": 197
+      },
+      "token_diversity": 0.1983104540654699,
+      "token_diversity_last_2k": 0.1155,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.07610114192495922,
+        "has_encoding_error": false,
+        "gibberish_count": 12
+      }
+    },
+    {
+      "idx": 57,
+      "problem": "",
+      "gold_answer": [
+        "236"
+      ],
+      "predicted_answer": "260",
+      "is_correct": false,
+      "word_count": 4267,
+      "char_count": 20089,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 74,
+        "hmm": 3,
+        "so": 0,
+        "but": 70,
+        "actually": 0
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Wait, 6 is in the list": 4,
+          "So, the list is 9,1,2,5,6,7,8": 3,
+          "Wait, 1+2+3+5+6+7=28": 5
+        },
+        "max_sentence_repetition": 5
+      },
+      "token_diversity": 0.1204593391141317,
+      "token_diversity_last_2k": 0.171,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.0181691472945393,
+        "has_encoding_error": false,
+        "gibberish_count": 3
+      }
+    },
+    {
+      "idx": 58,
+      "problem": "",
+      "gold_answer": [
+        "834"
+      ],
+      "predicted_answer": "117",
+      "is_correct": false,
+      "word_count": 2706,
+      "char_count": 13233,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 26,
+        "hmm": 2,
+        "so": 0,
+        "but": 33,
+        "actually": 2
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {},
+        "max_sentence_repetition": 2
+      },
+      "token_diversity": 0.2579453067257945,
+      "token_diversity_last_2k": 0.269,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.06929645583012166,
+        "has_encoding_error": false,
+        "gibberish_count": 2
+      }
+    },
+    {
+      "idx": 59,
+      "problem": "",
+      "gold_answer": [
+        "045"
+      ],
+      "predicted_answer": "2",
+      "is_correct": false,
+      "word_count": 4598,
+      "char_count": 22781,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 62,
+        "hmm": 5,
+        "so": 0,
+        "but": 101,
+        "actually": 1
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, 10a +11d must be in100-109": 3,
+          "So, no solution": 3,
+          "So, 10a +11d=109": 3,
+          "So, 10a +11d=100,101,": 3,
+          "Wait, 1882 is 1+8+8+2=19": 3,
+          "So, 1882 is 19": 5
+        },
+        "max_sentence_repetition": 5
+      },
+      "token_diversity": 0.14441061331013483,
+      "token_diversity_last_2k": 0.2,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.07045344804881261,
+        "has_encoding_error": false,
+        "gibberish_count": 5
+      }
+    },
+    {
+      "idx": 60,
+      "problem": "",
+      "gold_answer": [
+        "140"
+      ],
+      "predicted_answer": "450(7\\pi - \\sqrt{3",
+      "is_correct": false,
+      "word_count": 12472,
+      "char_count": 59429,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 174,
+        "hmm": 7,
+        "so": 0,
+        "but": 326,
+        "actually": 0
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "I need to find the area of this hexagon": 3,
+          "Similarly, power of D with respect to \u03c9\u2082 is DA * DC": 3,
+          "Similarly, power of A with respect to \u03c9\u2081 is (distance from A to O\u2081)^2 - r\u2081^2": 4,
+          "But power of A with respect to \u03c9\u2081 is (distance from A to O\u2081)^2 - r\u2081^2": 4,
+          "Power of A with respect to \u03c9\u2081 is (distance from A to O\u2081)^2 - r\u2081^2": 4,
+          "52, which is less than 7": 3,
+          "Similarly, power of D with respect to \u03c9\u2082 is zero, so DA * DC=0": 3,
+          "Similarly, power of D with respect to \u03c9\u2082 is zero": 3,
+          "But Power of A with respect to \u03c9\u2081 is AB * AC": 3,
+          "Similarly, Power of D with respect to \u03c9\u2081 is DA * DC": 4,
+          "But Power of A with respect to \u03c9\u2081 is AB * AC, and Power of D with respect to \u03c9\u2081 is DA * DC": 3,
+          "Similarly, Power of D with respect to \u03c9\u2081 is (distance from D to O\u2081)^2 - r\u2081^2": 4,
+          "Similarly, Power of D with respect to \u03c9\u2081 is S^2 - r\u2081^2": 3,
+          "But AB * AC = DA * DC": 9,
+          "Thus, AB * AC = DA * DC": 3,
+          "Thus, r\u2082^2 - r\u2081^2=4*(30 r\u2082 -225)": 3,
+          "Thus, 30 r\u2082 -225=30 r\u2082 -225": 3,
+          "Thus, r\u2082^2 - r\u2081^2=120 r\u2082 -900": 4,
+          "But r\u2082^2=30 r\u2082 -225": 3,
+          "Thus, the area of \u03c9\u2082 is 3150 \u03c0 -450 sqrt(3) \u03c0": 6,
+          "Thus, the exact area is 450(7 - sqrt(3)) \u03c0": 3,
+          "Thus, the area is 3150 \u03c0 -450 sqrt(3) \u03c0": 7,
+          "But 450(7 \u03c0 - sqrt(3) \u03c0)=3150 \u03c0 -450 sqrt(3) \u03c0": 4,
+          "Thus, the exact area is 450(7 \u03c0 - sqrt(3) \u03c0)": 6,
+          "But the problem asks for the area in terms of \u03c0": 3,
+          "Thus, the area is 450(7 - sqrt(3)) \u03c0": 3,
+          "Thus, 450(7 - sqrt(3)) \u03c0=3150 \u03c0 -450 sqrt(3) \u03c0": 3,
+          "But 450 is 450": 8,
+          "But 3150 \u03c0 -450 sqrt(3) \u03c0": 4,
+          "Thus, the exact area is 3150 \u03c0 -450 sqrt(3) \u03c0": 3,
+          "Thus, the area of \u03c9\u2082 is 450(7 \u03c0 - sqrt(3) \u03c0)": 3,
+          "Thus, the area is 450(7 \u03c0 - sqrt(3) \u03c0)": 7,
+          "Hence, the area of \u03c9\u2082 is 450(7 \u03c0 - sqrt(3) \u03c0)": 3
+        },
+        "max_sentence_repetition": 9
+      },
+      "token_diversity": 0.07512828736369467,
+      "token_diversity_last_2k": 0.1355,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.04708139123996702,
+        "has_encoding_error": false,
+        "gibberish_count": 7
+      }
+    },
+    {
+      "idx": 61,
+      "problem": "",
+      "gold_answer": [
+        "480"
+      ],
+      "predicted_answer": "0",
+      "is_correct": false,
+      "word_count": 3163,
+      "char_count": 18287,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 51,
+        "hmm": 2,
+        "so": 0,
+        "but": 41,
+        "actually": 3
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Therefore, \\(BD^2 = \\frac{AC^2}{m^2}\\)": 3
+        },
+        "max_sentence_repetition": 3
+      },
+      "token_diversity": 0.1602908631046475,
+      "token_diversity_last_2k": 0.171,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.07502597473615137,
+        "has_encoding_error": false,
+        "gibberish_count": 2
+      }
+    },
+    {
+      "idx": 62,
+      "problem": "",
+      "gold_answer": [
+        "738"
+      ],
+      "predicted_answer": "0",
+      "is_correct": false,
+      "word_count": 5404,
+      "char_count": 23978,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 50,
+        "hmm": 10,
+        "so": 0,
+        "but": 85,
+        "actually": 1
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Contradiction": 6,
+          "So, contradiction": 4
+        },
+        "max_sentence_repetition": 6
+      },
+      "token_diversity": 0.096039970392302,
+      "token_diversity_last_2k": 0.119,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.06643589957461006,
+        "has_encoding_error": false,
+        "gibberish_count": 10
+      }
+    },
+    {
+      "idx": 63,
+      "problem": "",
+      "gold_answer": [
+        "188"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 20409,
+      "char_count": 104669,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 27,
+        "hmm": 2,
+        "so": 0,
+        "but": 33,
+        "actually": 3
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, 97 is the minimal number of stamps to make 1000, so 97 is the minimal number of stamps": 9,
+          "So, how can we find such \\( c \\)": 4,
+          "So, 97 is the minimal number of stamps": 11,
+          "So, 97 is the minimal number of stamps, so 97 is the minimal number of stamps to make 1000": 4,
+          "So, 97 is the minimal number of stamps, so 97 is the minimal number of stamps": 4,
+          "Therefore, 97 is the minimal number of stamps, so 97 is the minimal number of stamps to make 1000": 3,
+          "Therefore, 97 is the minimal number of stamps to make 1000, so 97 is the minimal number of stamps": 5,
+          "So, the problem is to find the sum of the three smallest \\( c \\) such that there exists \\( a, b \\) with \\( a < b < c \\) such that 1000 can be made with 97 stamps": 8,
+          "So, how do we find such \\( c \\)": 3,
+          "So, 97 is the minimal number of stamps to make 1000": 3,
+          "So, 97 is the minimal number of stamps to make 1000, so 97 is the minimal number": 159,
+          "Therefore, 97 is the minimal number of stamps to make 1000, so 97 is the minimal number": 762,
+          "Therefore, 97 is the minimal number of stamps to make 1000": 5
+        },
+        "max_sentence_repetition": 762
+      },
+      "token_diversity": 0.01700230290558087,
+      "token_diversity_last_2k": 0.009,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.0033820902081800725,
+        "has_encoding_error": false,
+        "gibberish_count": 2
+      }
+    },
+    {
+      "idx": 64,
+      "problem": "",
+      "gold_answer": [
+        "116"
+      ],
+      "predicted_answer": "107",
+      "is_correct": false,
+      "word_count": 1358,
+      "char_count": 6992,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 21,
+        "hmm": 3,
+        "so": 0,
+        "but": 3,
+        "actually": 0
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {},
+        "max_sentence_repetition": 2
+      },
+      "token_diversity": 0.3379970544918999,
+      "token_diversity_last_2k": 0.3379970544918999,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.09739702517162471,
+        "has_encoding_error": false,
+        "gibberish_count": 3
+      }
+    },
+    {
+      "idx": 65,
+      "problem": "",
+      "gold_answer": [
+        "055"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 9983,
+      "char_count": 49553,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 42,
+        "hmm": 11,
+        "so": 0,
+        "but": 42,
+        "actually": 0
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Hmm, not sure": 4,
+          "So, 2024=8*11*23": 4,
+          "So, 2024=2^3*11*23": 3,
+          "So, 2024=2^{11} - 2^{3}*3": 3,
+          "So, 2024=2^{3}*11*23": 4,
+          "So, 2024=2^{3}*253": 452,
+          "So, 2^{m -1}=2^{11} -2^{3}*3": 3,
+          "So, 2024=2^{3}*(2^{8} -3)": 3,
+          "So, 253 is 253": 1451,
+          "Therefore, 22 is 22": 5,
+          "So, 22 is 22": 91,
+          "So, 22 is 22 is 22": 68,
+          "Therefore, 22 is 22 is 22": 15,
+          "So, 22 is 22 is 22 is 22": 12,
+          "So, 22 is 22 is 22 is 22 is 22": 3
+        },
+        "max_sentence_repetition": 1451
+      },
+      "token_diversity": 0.03956726434939397,
+      "token_diversity_last_2k": 0.0075,
+      "garbled_text": {
+        "repeated_chars": [
+          "1"
+        ],
+        "repeated_char_count": 1,
+        "special_char_ratio": 0.041672552620426614,
+        "has_encoding_error": false,
+        "gibberish_count": 11
+      }
+    },
+    {
+      "idx": 66,
+      "problem": "",
+      "gold_answer": [
+        "928"
+      ],
+      "predicted_answer": "2^{12} - 2^{12 - 12}= 4096 - 4096=0, which is wrong",
+      "is_correct": false,
+      "word_count": 11233,
+      "char_count": 75809,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 154,
+        "hmm": 3,
+        "so": 0,
+        "but": 284,
+        "actually": 30
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "+ (-1)^{n+1}|A1 \u2229 A2 \u2229": 5,
+          "So, for 12 vertices, 12*15=180": 3,
+          "00000009765625= +0": 3,
+          "000000146484375": 3,
+          "00000009765625": 8,
+          "0412109375 -1": 7,
+          "957614453125 +0": 7,
+          "05034003725 -0": 7,
+          "00503400390625 +0": 7,
+          "001333513671875 -0": 7,
+          "000000146484375 +0": 14,
+          "000000146484375\u22482121": 6,
+          "00000009765625\u22482121": 3,
+          "000000146484375\u22481986": 8,
+          "But, 2^{12}=4096": 40,
+          "So, 4096 +179": 12,
+          "But, 2^{12}*(15/16)^{15}=4096*(0": 16,
+          "But, since 4275": 6,
+          "So, 4096 +4096*(0": 42,
+          "So, 4096 +4096*(15/16)^{15}=4275": 5,
+          "So, the total number is 4275": 3,
+          "So, the exact number is 4275": 7,
+          "But, 2^{12}*(15/16)^{15}=4275": 24,
+          "So, 2^{12}*(15/16)^{15}=4275": 117,
+          "Therefore, the exact number is 4275": 9,
+          "Therefore, the total number is 4275": 6,
+          "Thus, 2^{12}*(15/16)^{15}=4275": 60,
+          "So, 2^{12}=4096": 4,
+          "Therefore, 2^{12}*(15/16)^{15}=4275": 67,
+          "Therefore, 4275": 6,
+          "Therefore, the probability of the intersection of all six faces is 4275": 12,
+          "Thus, the probability of the intersection of all six faces is 4275": 14,
+          "Hence, the probability of the intersection of all six faces is 4275": 5,
+          "Therefore, the intersection of all six faces is 4275": 12,
+          "Hence, the intersection of all six faces is 4275": 8,
+          "Thus, the intersection of all six faces is 4275": 8
+        },
+        "max_sentence_repetition": 117
+      },
+      "token_diversity": 0.09160509213923262,
+      "token_diversity_last_2k": 0.027,
+      "garbled_text": {
+        "repeated_chars": [
+          "0"
+        ],
+        "repeated_char_count": 1,
+        "special_char_ratio": 0.0455091084172064,
+        "has_encoding_error": false,
+        "gibberish_count": 3
+      }
+    },
+    {
+      "idx": 67,
+      "problem": "",
+      "gold_answer": [
+        "033"
+      ],
+      "predicted_answer": "155",
+      "is_correct": false,
+      "word_count": 4293,
+      "char_count": 19189,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 41,
+        "hmm": 8,
+        "so": 0,
+        "but": 47,
+        "actually": 2
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, a = -7/24": 3
+        },
+        "max_sentence_repetition": 3
+      },
+      "token_diversity": 0.16911250873515024,
+      "token_diversity_last_2k": 0.2405,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.11089686799729011,
+        "has_encoding_error": false,
+        "gibberish_count": 8
+      }
+    },
+    {
+      "idx": 68,
+      "problem": "",
+      "gold_answer": [
+        "250"
+      ],
+      "predicted_answer": "100( \\sqrt{2",
+      "is_correct": false,
+      "word_count": 9026,
+      "char_count": 44952,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 127,
+        "hmm": 3,
+        "so": 0,
+        "but": 174,
+        "actually": 8
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Set equal to right side: 3kc - c\u00b2": 3,
+          "Thus, 5\u221a2= a(2 - \u221a2)/2": 4,
+          "Thus, a=10\u221a2 + 10\u221a2*\u221a2=10\u221a2 + 20": 4,
+          "Inradius r= (a + a - a\u221a2)/2= a(2 - \u221a2)/2": 3,
+          "Thus, r=5\u221a2": 4,
+          "a=10\u221a2 + 10\u221a2*\u221a2=10\u221a2 + 20": 3,
+          "Distance from A to P is r\u221a2=10": 6,
+          "Thus, r=5\u221a2, so a= (5\u221a2)*2 / (2 - \u221a2)= same as before": 4
+        },
+        "max_sentence_repetition": 6
+      },
+      "token_diversity": 0.13405716818081098,
+      "token_diversity_last_2k": 0.1995,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.05316782345613098,
+        "has_encoding_error": false,
+        "gibberish_count": 3
+      }
+    },
+    {
+      "idx": 69,
+      "problem": "",
+      "gold_answer": [
+        "902"
+      ],
+      "predicted_answer": "1024",
+      "is_correct": false,
+      "word_count": 5597,
+      "char_count": 28255,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 81,
+        "hmm": 1,
+        "so": 0,
+        "but": 95,
+        "actually": 6
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, the number of white cells is 5W + 5B - WB": 3,
+          "So, the answer is 1024": 3,
+          "Therefore, the answer is 1024": 4
+        },
+        "max_sentence_repetition": 4
+      },
+      "token_diversity": 0.114704305878149,
+      "token_diversity_last_2k": 0.209,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.02597770306140506,
+        "has_encoding_error": false,
+        "gibberish_count": 1
+      }
+    },
+    {
+      "idx": 70,
+      "problem": "",
+      "gold_answer": [
+        "072"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 13640,
+      "char_count": 58756,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 68,
+        "hmm": 9,
+        "so": 0,
+        "but": 74,
+        "actually": 13
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Hence, the graph is a union of cycles, each of which is a cycle of length n / gcd(n,p)": 4,
+          "11140 columns is 11": 16,
+          "Hence, the number of 1s in the first 11111111": 12,
+          "Hence, the number of 1s is 11": 133,
+          "Therefore, the number of 1s in the first 11111111": 3,
+          "Therefore, the number of 1s is 11": 7
+        },
+        "max_sentence_repetition": 133
+      },
+      "token_diversity": 0.046847507331378296,
+      "token_diversity_last_2k": 0.017,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.06618898495472803,
+        "has_encoding_error": false,
+        "gibberish_count": 9
+      }
+    },
+    {
+      "idx": 71,
+      "problem": "",
+      "gold_answer": [
+        "468"
+      ],
+      "predicted_answer": "c",
+      "is_correct": false,
+      "word_count": 14566,
+      "char_count": 66824,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 168,
+        "hmm": 16,
+        "so": 0,
+        "but": 406,
+        "actually": 10
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Let me denote angle BAC as \u03b1": 3,
+          "a h + b k = 0\n2": 3,
+          "Similarly, b = 2R sin B, c = 2R sin C": 3,
+          "But sin A = 2 sin (A/2) cos (A/2)": 7,
+          "Wait, let me check": 3,
+          "So, 13 sin A = 26 cos (A/2)": 3,
+          "So, sin A = 2 cos (A/2)": 4,
+          "So, 2 sin (A/2) cos (A/2) = 2 cos (A/2)": 4,
+          "But in the coordinate system, the distance from A to B is c, from A to C is b, and from B to C is a": 97,
+          "But in the problem, it's asking for AB * AC= c * b": 7,
+          "But in the problem, the distance from A to B is c, from A to C is b, and from B to C is a": 88
+        },
+        "max_sentence_repetition": 97
+      },
+      "token_diversity": 0.07723465604833173,
+      "token_diversity_last_2k": 0.0685,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.02458697473961451,
+        "has_encoding_error": false,
+        "gibberish_count": 16
+      }
+    },
+    {
+      "idx": 72,
+      "problem": "",
+      "gold_answer": [
+        "110"
+      ],
+      "predicted_answer": "55^4 = 804",
+      "is_correct": false,
+      "word_count": 6810,
+      "char_count": 45992,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 46,
+        "hmm": 6,
+        "so": 0,
+        "but": 35,
+        "actually": 1
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, 28561*16=457, 28561*16=457, 28561*16=457, 28561*16=457, 28561*16=457": 24,
+          "Therefore, 55^4=804 is insufficient": 4,
+          "Therefore, 55^4=804 is insufficient, so 55^4=804 is insufficient": 4
+        },
+        "max_sentence_repetition": 24
+      },
+      "token_diversity": 0.1091042584434655,
+      "token_diversity_last_2k": 0.0615,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.10469212036875979,
+        "has_encoding_error": false,
+        "gibberish_count": 6
+      }
+    },
+    {
+      "idx": 73,
+      "problem": "",
+      "gold_answer": [
+        "244"
+      ],
+      "predicted_answer": "8",
+      "is_correct": false,
+      "word_count": 6720,
+      "char_count": 33442,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 229,
+        "hmm": 8,
+        "so": 0,
+        "but": 85,
+        "actually": 15
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Wait, so that formula is wrong": 4,
+          "Wait, for m=2, n=2: 1 rectangle, 2 lines, so 1 + 2 + 2 +1=6, which is correct": 3,
+          "Wait, for m=2, n=2:4 intersection points, 4 lines, so 4 +4 +1=9, which is incorrect": 3
+        },
+        "max_sentence_repetition": 4
+      },
+      "token_diversity": 0.0775297619047619,
+      "token_diversity_last_2k": 0.122,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.02792895161772621,
+        "has_encoding_error": false,
+        "gibberish_count": 8
+      }
+    },
+    {
+      "idx": 74,
+      "problem": "",
+      "gold_answer": [
+        "192"
+      ],
+      "predicted_answer": "135",
+      "is_correct": false,
+      "word_count": 8677,
+      "char_count": 44381,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 100,
+        "hmm": 8,
+        "so": 0,
+        "but": 131,
+        "actually": 9
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, the area is 55": 5,
+          "487\n\n(m2 +m1 )\u22482": 3
+        },
+        "max_sentence_repetition": 5
+      },
+      "token_diversity": 0.14186930966924052,
+      "token_diversity_last_2k": 0.2315,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.06595164597462878,
+        "has_encoding_error": false,
+        "gibberish_count": 8
+      }
+    },
+    {
+      "idx": 75,
+      "problem": "",
+      "gold_answer": [
+        "211"
+      ],
+      "predicted_answer": "12",
+      "is_correct": false,
+      "word_count": 7575,
+      "char_count": 34281,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 105,
+        "hmm": 4,
+        "so": 0,
+        "but": 98,
+        "actually": 0
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {},
+        "max_sentence_repetition": 2
+      },
+      "token_diversity": 0.12369636963696369,
+      "token_diversity_last_2k": 0.2145,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.07374347306087921,
+        "has_encoding_error": false,
+        "gibberish_count": 4
+      }
+    },
+    {
+      "idx": 76,
+      "problem": "",
+      "gold_answer": [
+        "699"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 10182,
+      "char_count": 59161,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 142,
+        "hmm": 12,
+        "so": 0,
+        "but": 144,
+        "actually": 1
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Contradiction": 5,
+          "N + 100b + 10c + d \u22610 mod7\n\n2": 4,
+          "N + 100a +10c + d \u22610 mod7\n\n3": 3,
+          "N + 100a +10b +d \u22610 mod7\n\n4": 4,
+          "Changing any digit to1:\n\nChanging a=1 to1: same": 6,
+          ", not integer": 9,
+          "857, not integer": 3,
+          "Wait, 5495 is less than 5515": 3,
+          "So, 7*785=5515": 3,
+          "So, 5515 is 5515": 3,
+          "Wait, 5515 is 5515": 3,
+          "So, equations:\n\n1": 3,
+          "Therefore, no solution": 5,
+          "N\u22610 mod7\n\n2": 4,
+          "N +100\u22610 mod7\n\n3": 3,
+          "N +100a +10\u22610 mod7\n\n4": 3,
+          "1121 /7=160": 3,
+          "Not integer": 3,
+          "2111 /7=301": 4,
+          "10094\u22610 mod7": 3,
+          "1000 +10=1000": 6,
+          "100 +10=1000": 14,
+          "100 +10=100 +10=1000": 4,
+          "100 +10=100 +10=100 +10=1000": 3
+        },
+        "max_sentence_repetition": 14
+      },
+      "token_diversity": 0.12433706540954625,
+      "token_diversity_last_2k": 0.0965,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.09027906898125454,
+        "has_encoding_error": true,
+        "gibberish_count": 12
+      }
+    },
+    {
+      "idx": 77,
+      "problem": "",
+      "gold_answer": [
+        "392"
+      ],
+      "predicted_answer": "12",
+      "is_correct": false,
+      "word_count": 4973,
+      "char_count": 24845,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 85,
+        "hmm": 0,
+        "so": 0,
+        "but": 159,
+        "actually": 3
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Therefore, the number of distinct numerators is 12": 3,
+          "Hence, the number of distinct numerators is 12": 5
+        },
+        "max_sentence_repetition": 5
+      },
+      "token_diversity": 0.10215161874120249,
+      "token_diversity_last_2k": 0.1375,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.0204065204266452,
+        "has_encoding_error": false,
+        "gibberish_count": 0
+      }
+    },
+    {
+      "idx": 78,
+      "problem": "",
+      "gold_answer": [
+        "273"
+      ],
+      "predicted_answer": "173",
+      "is_correct": false,
+      "word_count": 3048,
+      "char_count": 15120,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 45,
+        "hmm": 3,
+        "so": 0,
+        "but": 37,
+        "actually": 2
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "From Equation (2): yz +4x=60": 3,
+          "From Equation (3): zx +4y=60": 4,
+          "From Equation (1): xy +4z=60": 3
+        },
+        "max_sentence_repetition": 4
+      },
+      "token_diversity": 0.18799212598425197,
+      "token_diversity_last_2k": 0.219,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.08842592592592592,
+        "has_encoding_error": false,
+        "gibberish_count": 3
+      }
+    },
+    {
+      "idx": 79,
+      "problem": "",
+      "gold_answer": [
+        "073"
+      ],
+      "predicted_answer": "0",
+      "is_correct": false,
+      "word_count": 2511,
+      "char_count": 12809,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 34,
+        "hmm": 5,
+        "so": 0,
+        "but": 36,
+        "actually": 0
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {},
+        "max_sentence_repetition": 2
+      },
+      "token_diversity": 0.16129032258064516,
+      "token_diversity_last_2k": 0.1705,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.022874541338121633,
+        "has_encoding_error": false,
+        "gibberish_count": 5
+      }
+    },
+    {
+      "idx": 80,
+      "problem": "",
+      "gold_answer": [
+        "228"
+      ],
+      "predicted_answer": "299",
+      "is_correct": false,
+      "word_count": 4007,
+      "char_count": 22992,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 29,
+        "hmm": 1,
+        "so": 0,
+        "but": 61,
+        "actually": 0
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Similarly, 4,5,a,b: 4,5,a,b": 3
+        },
+        "max_sentence_repetition": 3
+      },
+      "token_diversity": 0.16571000748689793,
+      "token_diversity_last_2k": 0.2025,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.03005393180236604,
+        "has_encoding_error": false,
+        "gibberish_count": 1
+      }
+    },
+    {
+      "idx": 81,
+      "problem": "",
+      "gold_answer": [
+        "116"
+      ],
+      "predicted_answer": "116",
+      "is_correct": true,
+      "word_count": 1599,
+      "char_count": 8781,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 23,
+        "hmm": 1,
+        "so": 0,
+        "but": 9,
+        "actually": 3
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {},
+        "max_sentence_repetition": 2
+      },
+      "token_diversity": 0.2557848655409631,
+      "token_diversity_last_2k": 0.2557848655409631,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.042933606650723155,
+        "has_encoding_error": false,
+        "gibberish_count": 1
+      }
+    },
+    {
+      "idx": 82,
+      "problem": "",
+      "gold_answer": [
+        "378"
+      ],
+      "predicted_answer": "19",
+      "is_correct": false,
+      "word_count": 9554,
+      "char_count": 46893,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 237,
+        "hmm": 10,
+        "so": 0,
+        "but": 118,
+        "actually": 11
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Wait, that can't be": 3,
+          "So, the distance from centroid to each side is 9\u221a3, and the distance from centroid to each vertex is 18": 3,
+          "206, which is too small": 3,
+          "206, which is still too small": 3,
+          "Wait, no, 6": 6,
+          "333 cm is 18": 11,
+          "Wait, but 6": 4
+        },
+        "max_sentence_repetition": 11
+      },
+      "token_diversity": 0.08048984718442537,
+      "token_diversity_last_2k": 0.156,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.03217964301708144,
+        "has_encoding_error": true,
+        "gibberish_count": 10
+      }
+    },
+    {
+      "idx": 83,
+      "problem": "",
+      "gold_answer": [
+        "180"
+      ],
+      "predicted_answer": "\\dfrac{1225",
+      "is_correct": false,
+      "word_count": 8113,
+      "char_count": 42795,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 143,
+        "hmm": 7,
+        "so": 0,
+        "but": 127,
+        "actually": 3
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Let me try that": 3,
+          "5 squared is 992": 3,
+          "Wait, no, 31": 3,
+          "Wait, so 996": 4,
+          "5 is 63/2, so 31": 3,
+          "5^2 + 4=996": 5,
+          "5^2 + 4=992": 4,
+          "Wait, confusion": 3
+        },
+        "max_sentence_repetition": 5
+      },
+      "token_diversity": 0.16566005176876616,
+      "token_diversity_last_2k": 0.2595,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.05432877672625307,
+        "has_encoding_error": false,
+        "gibberish_count": 7
+      }
+    },
+    {
+      "idx": 84,
+      "problem": "",
+      "gold_answer": [
+        "080"
+      ],
+      "predicted_answer": "10",
+      "is_correct": false,
+      "word_count": 17522,
+      "char_count": 75284,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 76,
+        "hmm": 0,
+        "so": 0,
+        "but": 130,
+        "actually": 14
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Each triplet \\( (a, b, c) \\) corresponds to a unique \\( n \\)": 3
+        },
+        "max_sentence_repetition": 3
+      },
+      "token_diversity": 0.03059011528364342,
+      "token_diversity_last_2k": 0.0745,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.12927049572286275,
+        "has_encoding_error": false,
+        "gibberish_count": 0
+      }
+    },
+    {
+      "idx": 85,
+      "problem": "",
+      "gold_answer": [
+        "944"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 7014,
+      "char_count": 45587,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 77,
+        "hmm": 3,
+        "so": 0,
+        "but": 79,
+        "actually": 1
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, the total distance is 2,55 + 15,202 = 17,757 units": 32,
+          "Wait, but in the system, the total distance is 2,55 and 15,202": 3,
+          "Wait, in the system, the total distance is 2,55 and 15,202": 18,
+          "But, in the system, the total distance is 2,55 and 15,202": 10,
+          "So, the total is 2,55 + 15,202 = 17,757": 9,
+          "But, in the system, the total is 2,55 and 15,202": 4,
+          "Wait, 2,55 and 15,15,202 is 17,757": 4
+        },
+        "max_sentence_repetition": 32
+      },
+      "token_diversity": 0.06786427145708583,
+      "token_diversity_last_2k": 0.0325,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.038695242064623686,
+        "has_encoding_error": false,
+        "gibberish_count": 3
+      }
+    },
+    {
+      "idx": 86,
+      "problem": "",
+      "gold_answer": [
+        "608"
+      ],
+      "predicted_answer": "0",
+      "is_correct": false,
+      "word_count": 6547,
+      "char_count": 38422,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 88,
+        "hmm": 5,
+        "so": 0,
+        "but": 133,
+        "actually": 1
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, each movement is a transposition of the two hands, each moving one step": 4,
+          "So, each movement is a transposition, which is an odd permutation": 4,
+          "So, each movement is a transposition of two adjacent transpositions, each moving one step": 3,
+          "So, the permutation is an even permutation, and it's the identity permutation": 5,
+          "So, the permutation is an even permutation, which is the identity permutation": 3,
+          "So, each transposition is a swap of two adjacent transpositions, each moving one step": 18,
+          "Wait, but the number of such permutations is equal to the number of ways to write the identity permutation as a product of 144 transpositions, each being an odd permutation": 5,
+          "times (1 - 1/1": 14,
+          "+ (-1)^n /n": 3,
+          "+ (-1)^144 /144": 10,
+          "times sum_{k=0}^n (-1)^k /k": 4,
+          "times sum_{k=0}^{144} (-1)^k /k": 4
+        },
+        "max_sentence_repetition": 18
+      },
+      "token_diversity": 0.06965022147548496,
+      "token_diversity_last_2k": 0.125,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.007886106917911613,
+        "has_encoding_error": false,
+        "gibberish_count": 5
+      }
+    },
+    {
+      "idx": 87,
+      "problem": "",
+      "gold_answer": [
+        "245"
+      ],
+      "predicted_answer": "1",
+      "is_correct": false,
+      "word_count": 11214,
+      "char_count": 46482,
+      "has_boxed_answer": true,
+      "repetition_markers": {
+        "wait": 145,
+        "hmm": 3,
+        "so": 0,
+        "but": 103,
+        "actually": 4
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "So, the formula is wrong": 3,
+          "So, discrepancy": 3,
+          "- For (\\{1,2\\}, \\{1,2\\}): 2": 3
+        },
+        "max_sentence_repetition": 3
+      },
+      "token_diversity": 0.07151774567504905,
+      "token_diversity_last_2k": 0.031,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.06503592788606342,
+        "has_encoding_error": true,
+        "gibberish_count": 3
+      }
+    },
+    {
+      "idx": 88,
+      "problem": "",
+      "gold_answer": [
+        "247"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 7102,
+      "char_count": 43853,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 79,
+        "hmm": 5,
+        "so": 0,
+        "but": 32,
+        "actually": 3
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {},
+        "max_sentence_repetition": 2
+      },
+      "token_diversity": 0.1990988453956632,
+      "token_diversity_last_2k": 0.4465,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.019542562652498117,
+        "has_encoding_error": false,
+        "gibberish_count": 5
+      }
+    },
+    {
+      "idx": 89,
+      "problem": "",
+      "gold_answer": [
+        "315"
+      ],
+      "predicted_answer": null,
+      "is_correct": false,
+      "word_count": 20662,
+      "char_count": 122011,
+      "has_boxed_answer": false,
+      "repetition_markers": {
+        "wait": 132,
+        "hmm": 1,
+        "so": 0,
+        "but": 155,
+        "actually": 5
+      },
+      "repeated_sequences": {
+        "repeated_words": [],
+        "repeated_word_count": 0,
+        "repeated_sentences": {
+          "Wait, so 66 unique direction pairs, each 30 degrees apart, so 66 unique direction pairs, each 30 degrees apart": 7,
+          "Wait, but 12 choose 2 is 66, so 66 unique direction pairs, each 30 degrees apart, so 66 unique direction pairs, each 30 degrees apart": 11,
+          "So, 66 unique direction pairs, each 30 degrees apart, so 66 unique direction pairs, each 30 degrees apart": 13,
+          "But, in reality, each direction is unique, so 66 unique direction pairs, each 30 degrees apart": 8,
+          "Therefore, the number of rectangles is 66": 3,
+          "Therefore, the number of unique direction pairs, each 30 degrees apart, is 66": 965,
+          "Hence, the number of unique direction pairs, each 30 degrees apart, is 66": 21,
+          "So, the number of unique direction pairs, each 30 degrees apart, is 66": 107,
+          "Therefore, the number of unique direction pairs, each 30 degrees apart, is 666": 42
+        },
+        "max_sentence_repetition": 965
+      },
+      "token_diversity": 0.02250508179266286,
+      "token_diversity_last_2k": 0.007,
+      "garbled_text": {
+        "repeated_chars": [],
+        "repeated_char_count": 0,
+        "special_char_ratio": 0.0010572817205006105,
+        "has_encoding_error": false,
+        "gibberish_count": 1
+      }
+    }
+  ]
+}

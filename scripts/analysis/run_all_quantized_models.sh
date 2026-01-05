@@ -31,11 +31,20 @@ quantized_models=(
 echo "===== Running inference on base model (FP16) ====="
 for dataset in "${datasets[@]}"; do
     echo "Dataset: $dataset"
+
+    # Set max_samples based on dataset
+    if [[ "$dataset" == "MATH-500" ]]; then
+        max_samples=100
+    elif [[ "$dataset" == "AIME-90" ]]; then
+        max_samples=45
+    fi
+
     CUDA_VISIBLE_DEVICES=${device} \
     python -m inference \
         --model ${base_model} \
         --dataset ${dataset} \
-        --seed ${seed}
+        --seed ${seed} \
+        --max_samples ${max_samples}
 done
 
 # Run inference on all quantized models
@@ -50,11 +59,20 @@ for model_path in "${quantized_models[@]}"; do
 
     for dataset in "${datasets[@]}"; do
         echo "Dataset: $dataset"
+
+        # Set max_samples based on dataset
+        if [[ "$dataset" == "MATH-500" ]]; then
+            max_samples=100
+        elif [[ "$dataset" == "AIME-90" ]]; then
+            max_samples=45
+        fi
+
         CUDA_VISIBLE_DEVICES=${device} \
         python -m inference \
             --model ${model_path} \
             --dataset ${dataset} \
-            --seed ${seed}
+            --seed ${seed} \
+            --max_samples ${max_samples}
     done
 done
 

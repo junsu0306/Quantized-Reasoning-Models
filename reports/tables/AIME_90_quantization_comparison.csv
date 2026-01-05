@@ -1,0 +1,7 @@
+Quantization Method,Accuracy (%),Avg Words,Token Diversity,Wait Count
+Baseline (FP16),6.67,17312,0.0552,1531.4
+AWQ W4,20.00,9913,0.1288,169.3
+AWQ W3,6.67,17312,0.0552,1531.4
+GPTQ W4,18.89,8309,0.1459,111.4
+GPTQ W3,10.00,9183,0.1180,97.0
+KV-Quant* KV4,20.00,9637,0.1470,123.3

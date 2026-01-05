@@ -1,0 +1,12 @@
+{
+  "model_3bit": "DeepSeek-R1-Distill-Qwen-1.5B-gptq-w3g128-tp1",
+  "model_4bit": "DeepSeek-R1-Distill-Qwen-1.5B-gptq-w4g128-tp1",
+  "dataset": "AIME-90",
+  "total_samples": 90,
+  "accuracy_3bit": 0.1,
+  "accuracy_4bit": 0.18888888888888888,
+  "both_correct": 6,
+  "both_wrong": 70,
+  "only_4bit_correct": 11,
+  "only_3bit_correct": 3
+}

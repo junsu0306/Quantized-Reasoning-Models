@@ -1,0 +1,12 @@
+{
+  "model_3bit": "DeepSeek-R1-Distill-Qwen-1.5B-gptq-w3g128-tp1",
+  "model_4bit": "DeepSeek-R1-Distill-Qwen-1.5B-gptq-w4g128-tp1",
+  "dataset": "MATH-500",
+  "total_samples": 500,
+  "accuracy_3bit": 0.714,
+  "accuracy_4bit": 0.83,
+  "both_correct": 337,
+  "both_wrong": 65,
+  "only_4bit_correct": 78,
+  "only_3bit_correct": 20
+}

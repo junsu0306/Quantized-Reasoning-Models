@@ -1,0 +1,127 @@
+{
+  "total_models": 6,
+  "total_datasets": 2,
+  "total_responses_analyzed": 3540,
+  "models": {
+    "DeepSeek-R1-Distill-Qwen-1.5B-awq-w3g128-tp1": {
+      "AIME-90": {
+        "accuracy": 0.06666666666666667,
+        "total_samples": 90,
+        "correct_count": 6,
+        "incorrect_count": 84,
+        "avg_word_count": 17311.844444444443,
+        "avg_wait_count": 1531.3777777777777,
+        "token_diversity": 0.055220472132731215
+      },
+      "MATH-500": {
+        "accuracy": 0.526,
+        "total_samples": 500,
+        "correct_count": 263,
+        "incorrect_count": 237,
+        "avg_word_count": 11326.956,
+        "avg_wait_count": 968.668,
+        "token_diversity": 0.1185041054031273
+      }
+    },
+    "DeepSeek-R1-Distill-Qwen-1.5B-awq-w4g128-tp1": {
+      "AIME-90": {
+        "accuracy": 0.2,
+        "total_samples": 90,
+        "correct_count": 18,
+        "incorrect_count": 72,
+        "avg_word_count": 9913.077777777778,
+        "avg_wait_count": 169.3,
+        "token_diversity": 0.12880183771897336
+      },
+      "MATH-500": {
+        "accuracy": 0.834,
+        "total_samples": 500,
+        "correct_count": 417,
+        "incorrect_count": 83,
+        "avg_word_count": 2958.52,
+        "avg_wait_count": 46.666,
+        "token_diversity": 0.24265458073543028
+      }
+    },
+    "DeepSeek-R1-Distill-Qwen-1.5B-gptq-w3g128-tp1": {
+      "AIME-90": {
+        "accuracy": 0.1,
+        "total_samples": 90,
+        "correct_count": 9,
+        "incorrect_count": 81,
+        "avg_word_count": 9183.022222222222,
+        "avg_wait_count": 97.0111111111111,
+        "token_diversity": 0.11800339249630767
+      },
+      "MATH-500": {
+        "accuracy": 0.714,
+        "total_samples": 500,
+        "correct_count": 357,
+        "incorrect_count": 143,
+        "avg_word_count": 2934.678,
+        "avg_wait_count": 41.492,
+        "token_diversity": 0.23657818388837734
+      }
+    },
+    "DeepSeek-R1-Distill-Qwen-1.5B-gptq-w4g128-tp1": {
+      "AIME-90": {
+        "accuracy": 0.18888888888888888,
+        "total_samples": 90,
+        "correct_count": 17,
+        "incorrect_count": 73,
+        "avg_word_count": 8309.166666666666,
+        "avg_wait_count": 111.38888888888889,
+        "token_diversity": 0.14588447988648973
+      },
+      "MATH-500": {
+        "accuracy": 0.83,
+        "total_samples": 500,
+        "correct_count": 415,
+        "incorrect_count": 85,
+        "avg_word_count": 2976.084,
+        "avg_wait_count": 36.388,
+        "token_diversity": 0.249321405520409
+      }
+    },
+    "DeepSeek-R1-Distill-Qwen-1.5B-kvquant_star-kv4-tp1": {
+      "AIME-90": {
+        "accuracy": 0.2,
+        "total_samples": 90,
+        "correct_count": 18,
+        "incorrect_count": 72,
+        "avg_word_count": 9636.91111111111,
+        "avg_wait_count": 123.27777777777777,
+        "token_diversity": 0.14695850498039734
+      },
+      "MATH-500": {
+        "accuracy": 0.842,
+        "total_samples": 500,
+        "correct_count": 421,
+        "incorrect_count": 79,
+        "avg_word_count": 3025.222,
+        "avg_wait_count": 39.498,
+        "token_diversity": 0.25303621185526526
+      }
+    },
+    "DeepSeek-R1-Distill-Qwen-1.5B": {
+      "AIME-90": {
+        "accuracy": 0.25555555555555554,
+        "total_samples": 90,
+        "correct_count": 23,
+        "incorrect_count": 67,
+        "avg_word_count": 8710.566666666668,
+        "avg_wait_count": 107.77777777777777,
+        "token_diversity": 0.15482649697497572
+      },
+      "MATH-500": {
+        "accuracy": 0.85,
+        "total_samples": 500,
+        "correct_count": 425,
+        "incorrect_count": 75,
+        "avg_word_count": 2983.298,
+        "avg_wait_count": 33.152,
+        "token_diversity": 0.2505374556939845
+      }
+    }
+  }
+}
