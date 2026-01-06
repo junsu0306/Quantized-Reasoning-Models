@@ -2,7 +2,7 @@ import os
 import argparse
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from .calib_data import get_pile_calib_dataset, get_reasoning_calib_dataset
+from .calib_data import get_pile_calib_dataset, get_reasoning_calib_dataset, get_reasoning_calib_text_list
 
 
 def parser_gen():
@@ -14,7 +14,7 @@ def parser_gen():
                         choices=['awq-autoawq', 'awq-llmcompressor', 'gptq-gptqmodel', 'gptq-llmcompressor'],
                         help='Supported real-quantization methods')
     parser.add_argument("--w_bits", type=int, default=4,
-                        choices=[4], help='#bits for weights')
+                        choices=[3, 4], help='#bits for weights')
     parser.add_argument("--w_groupsize", type=int, default=128, help='Weight quantization group size')
     parser.add_argument("--w_asym", action="store_true", help='Asymmetric weight quantization')
     args = parser.parse_args()
@@ -46,6 +46,9 @@ if __name__ == "__main__":
         )
         tokenizer = AutoTokenizer.from_pretrained(args.model, trust_remote_code=True)
 
+        # 🔥 수학 데이터로 캘리브레이션 (GPTQ와 동일한 데이터 사용)
+        calib_text_list = get_reasoning_calib_text_list(model_name=args.model_name, n_samples=128)
+
         quant_config = {
             "zero_point": args.w_asym,
             "q_group_size": args.w_groupsize,
@@ -55,11 +58,9 @@ if __name__ == "__main__":
         model.quantize(
             tokenizer=tokenizer,
             quant_config=quant_config,
-            calib_data="./datasets/pile-val-backup",
-            split="validation",
-            text_column="text",
+            calib_data=calib_text_list,  # 텍스트 리스트 직접 전달
             max_calib_samples=128,
-            max_calib_seq_len=512,
+            max_calib_seq_len=2048,  # GPTQ와 동일한 시퀀스 길이
             duo_scaling=False,
             apply_clip=True,
         )
@@ -107,8 +108,8 @@ if __name__ == "__main__":
         tokenizer = AutoTokenizer.from_pretrained(args.model, trust_remote_code=True)
 
         if args.method == "awq-llmcompressor":
-            # Load dataset
-            ds = get_pile_calib_dataset(tokenizer=tokenizer, n_samples=128, block_size=512)
+            # 🔥 수학 데이터로 캘리브레이션 (GPTQ와 동일한 데이터 사용)
+            ds = get_reasoning_calib_dataset(model_name=args.model_name, tokenizer=tokenizer, n_samples=128, seqlen=2048)
 
             # Configure the quantization algorithm to run
             recipe = [

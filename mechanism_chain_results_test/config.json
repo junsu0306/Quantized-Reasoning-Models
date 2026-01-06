@@ -1,0 +1,21 @@
+{
+  "experiment_name": "MechanismChainVerification_TEST",
+  "version": "1.0.0",
+  "timestamp": "20260106_214247",
+  "seed": 42,
+  "output_dir": "./mechanism_chain_results_test",
+  "base_model": "./modelzoo/DeepSeek-R1/DeepSeek-R1-Distill-Qwen-1.5B",
+  "quant_bits": 3,
+  "group_size": 128,
+  "n_general": 100,
+  "n_gsm8k": 100,
+  "n_aime": 50,
+  "max_seq_length": 512,
+  "min_seq_length": 64,
+  "bootstrap_n_resamples": 10000,
+  "bootstrap_confidence_level": 0.95,
+  "significance_level": 0.05,
+  "device": "cuda",
+  "dtype": "torch.float16",
+  "batch_size": 8
+}

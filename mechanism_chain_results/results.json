@@ -1,0 +1,406 @@
+{
+  "config": {
+    "experiment_name": "MechanismChainVerification_DeepSeekR1",
+    "version": "1.0.0",
+    "timestamp": "20260106_214239",
+    "seed": 42,
+    "output_dir": "./mechanism_chain_results",
+    "base_model": "./modelzoo/DeepSeek-R1/DeepSeek-R1-Distill-Qwen-1.5B",
+    "quant_bits": 3,
+    "group_size": 128,
+    "n_general": 2000,
+    "n_gsm8k": 1000,
+    "n_aime": 500,
+    "max_seq_length": 512,
+    "min_seq_length": 64,
+    "bootstrap_n_resamples": 10000,
+    "bootstrap_confidence_level": 0.95,
+    "significance_level": 0.05,
+    "device": "cuda",
+    "dtype": "torch.float16",
+    "batch_size": 8
+  },
+  "accuracy_data": {},
+  "statistics": {
+    "domain_comparison_residual": {
+      "kruskal_wallis": {
+        "h_statistic": 847.8448469135237,
+        "p_value": 7.813232316148994e-185
+      },
+      "pairwise": {
+        "general_vs_gsm8k": {
+          "u_statistic": 1641464.0,
+          "p_value": 6.336382029388596e-181,
+          "effect_size": -0.641464
+        },
+        "general_vs_aime": {
+          "u_statistic": 115004.0,
+          "p_value": 8.023540519126027e-06,
+          "effect_size": -0.2778222222222222
+        },
+        "gsm8k_vs_aime": {
+          "u_statistic": 13912.0,
+          "p_value": 1.6405842958881118e-27,
+          "effect_size": 0.6908444444444444
+        }
+      },
+      "group_stats": {
+        "general": {
+          "n": 2000,
+          "mean": 233.02822492599486,
+          "std": 13.776786008244082,
+          "median": 238.4691619873047,
+          "iqr": 24.030383791242315
+        },
+        "gsm8k": {
+          "n": 1000,
+          "mean": 216.8364185202462,
+          "std": 10.123074489986385,
+          "median": 213.58808108738492,
+          "iqr": 7.992566381182002
+        },
+        "aime": {
+          "n": 90,
+          "mean": 230.82169649638823,
+          "std": 4.520787946581997,
+          "median": 230.7221132005964,
+          "iqr": 3.784679821559365
+        }
+      }
+    },
+    "chain_correlations": {
+      "residual_to_reversal": {
+        "rho": -0.8961697861281355,
+        "p_value": 0.0,
+        "ci_low": -0.9018987145102277,
+        "ci_high": -0.8902077300170631,
+        "n": 3090,
+        "method": "pearson"
+      },
+      "reversal_to_hidden": {
+        "rho": -0.06253123849668754,
+        "p_value": 0.0005052275322053071,
+        "ci_low": -0.09854430848306119,
+        "ci_high": -0.02767855994515208,
+        "n": 3090,
+        "method": "pearson"
+      },
+      "residual_to_error_AWQ": {
+        "rho": -0.2538442431337329,
+        "p_value": 1.2227114393689096e-46,
+        "ci_low": -0.2861224051737588,
+        "ci_high": -0.22144555477838143,
+        "n": 3090,
+        "method": "pearson"
+      },
+      "hidden_to_error_AWQ": {
+        "rho": -0.04903975441942156,
+        "p_value": 0.006400064020386354,
+        "ci_low": -0.08336416951553074,
+        "ci_high": -0.01496163129635618,
+        "n": 3090,
+        "method": "pearson"
+      },
+      "reversal_to_error_AWQ": {
+        "rho": 0.3036282940528799,
+        "p_value": 6.568538025130605e-67,
+        "ci_low": 0.2671284190255059,
+        "ci_high": 0.3381450996748178,
+        "n": 3090,
+        "method": "pearson"
+      },
+      "residual_to_error_GPTQ": {
+        "rho": NaN,
+        "p_value": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "n": 0
+      },
+      "hidden_to_error_GPTQ": {
+        "rho": NaN,
+        "p_value": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "n": 0
+      },
+      "reversal_to_error_GPTQ": {
+        "rho": NaN,
+        "p_value": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "n": 0
+      }
+    },
+    "mediation": {
+      "AWQ_residual_reversal_error": {
+        "path_a": {
+          "coef": -0.8961697861281355,
+          "p_value": 0.0,
+          "description": "avg_residual_mag \u2192 avg_reversal_ratio"
+        },
+        "path_b": {
+          "coef": 0.38673742083534374,
+          "p_value": 2.9260458802073305e-23,
+          "description": "avg_reversal_ratio \u2192 awq_error"
+        },
+        "direct_effect": {
+          "coef": 0.09273814858402361,
+          "p_value": 0.01637378718818326,
+          "description": "avg_residual_mag \u2192 awq_error (controlling avg_reversal_ratio)"
+        },
+        "indirect_effect": {
+          "coef": -0.34658239171775673,
+          "sobel_z": -9.97632173030377,
+          "p_value": 0.0
+        },
+        "total_effect": {
+          "coef": -0.2538442431337328,
+          "p_value": 1.2227114393689579e-46
+        },
+        "proportion_mediated": 1.3653348503758136,
+        "n": 3090
+      },
+      "AWQ_residual_hidden_error": {
+        "path_a": {
+          "coef": 0.42865549409774983,
+          "p_value": 2.4155590095624206e-138,
+          "description": "avg_residual_mag \u2192 avg_hidden_mag"
+        },
+        "path_b": {
+          "coef": 0.07322713373539846,
+          "p_value": 0.00014212716805582103,
+          "description": "avg_hidden_mag \u2192 awq_error"
+        },
+        "direct_effect": {
+          "coef": -0.2852334563264422,
+          "p_value": 3.6765469720035e-48,
+          "description": "avg_residual_mag \u2192 awq_error (controlling avg_hidden_mag)"
+        },
+        "indirect_effect": {
+          "coef": 0.03138921319270924,
+          "sobel_z": 3.770065111235424,
+          "p_value": 0.00016320496299160325
+        },
+        "total_effect": {
+          "coef": -0.2538442431337328,
+          "p_value": 1.2227114393689579e-46
+        },
+        "proportion_mediated": -0.12365540697400196,
+        "n": 3090
+      },
+      "GPTQ_residual_reversal_error": {
+        "path_a": {
+          "coef": -0.8961697861281355,
+          "p_value": 0.0,
+          "description": "avg_residual_mag \u2192 avg_reversal_ratio"
+        },
+        "path_b": {
+          "coef": NaN,
+          "p_value": NaN,
+          "description": "avg_reversal_ratio \u2192 gptq_error"
+        },
+        "direct_effect": {
+          "coef": NaN,
+          "p_value": NaN,
+          "description": "avg_residual_mag \u2192 gptq_error (controlling avg_reversal_ratio)"
+        },
+        "indirect_effect": {
+          "coef": NaN,
+          "sobel_z": NaN,
+          "p_value": NaN
+        },
+        "total_effect": {
+          "coef": NaN,
+          "p_value": NaN
+        },
+        "proportion_mediated": NaN,
+        "n": 3090
+      },
+      "GPTQ_residual_hidden_error": {
+        "path_a": {
+          "coef": 0.42865549409774983,
+          "p_value": 2.4155590095624206e-138,
+          "description": "avg_residual_mag \u2192 avg_hidden_mag"
+        },
+        "path_b": {
+          "coef": NaN,
+          "p_value": NaN,
+          "description": "avg_hidden_mag \u2192 gptq_error"
+        },
+        "direct_effect": {
+          "coef": NaN,
+          "p_value": NaN,
+          "description": "avg_residual_mag \u2192 gptq_error (controlling avg_hidden_mag)"
+        },
+        "indirect_effect": {
+          "coef": NaN,
+          "sobel_z": NaN,
+          "p_value": NaN
+        },
+        "total_effect": {
+          "coef": NaN,
+          "p_value": NaN
+        },
+        "proportion_mediated": NaN,
+        "n": 3090
+      }
+    },
+    "domain_correlations": {
+      "general": {
+        "AWQ_residual_error": {
+          "rho": -0.17380096824395783,
+          "p_value": 4.9806929150927136e-15,
+          "ci_low": -0.22668326975193923,
+          "ci_high": -0.12025333331512007,
+          "n": 2000,
+          "method": "pearson"
+        },
+        "GPTQ_residual_error": {
+          "rho": NaN,
+          "p_value": NaN,
+          "ci_low": NaN,
+          "ci_high": NaN,
+          "n": 0
+        }
+      },
+      "gsm8k": {
+        "AWQ_residual_error": {
+          "rho": -0.23324581388727986,
+          "p_value": 8.024221663917828e-14,
+          "ci_low": -0.2830793602338117,
+          "ci_high": -0.18268139311482082,
+          "n": 1000,
+          "method": "pearson"
+        },
+        "GPTQ_residual_error": {
+          "rho": NaN,
+          "p_value": NaN,
+          "ci_low": NaN,
+          "ci_high": NaN,
+          "n": 0
+        }
+      },
+      "aime": {
+        "AWQ_residual_error": {
+          "rho": 0.3048554081167459,
+          "p_value": 0.0034827352134789834,
+          "ci_low": -0.27359611390571914,
+          "ci_high": 0.6853825997826333,
+          "n": 90,
+          "method": "pearson"
+        },
+        "GPTQ_residual_error": {
+          "rho": NaN,
+          "p_value": NaN,
+          "ci_low": NaN,
+          "ci_high": NaN,
+          "n": 0
+        }
+      }
+    },
+    "error_analysis": {
+      "AWQ": {
+        "general": {
+          "mean": 0.64248486328125,
+          "std": 1.1618942049766252,
+          "median": 0.45703125,
+          "n": 2000
+        },
+        "gsm8k": {
+          "mean": 1.16641796875,
+          "std": 1.5378294051495605,
+          "median": 1.0546875,
+          "n": 1000
+        },
+        "aime": {
+          "mean": 0.30771484375,
+          "std": 0.17649861758287794,
+          "median": 0.30029296875,
+          "n": 90
+        }
+      },
+      "GPTQ": {
+        "general": {
+          "mean": NaN,
+          "std": NaN,
+          "median": NaN,
+          "n": 2000
+        },
+        "gsm8k": {
+          "mean": NaN,
+          "std": NaN,
+          "median": NaN,
+          "n": 1000
+        },
+        "aime": {
+          "mean": NaN,
+          "std": NaN,
+          "median": NaN,
+          "n": 90
+        }
+      }
+    },
+    "summary": {
+      "aime": {
+        "avg_residual_mag_mean": 230.8217,
+        "avg_residual_mag_std": 4.5461,
+        "avg_residual_mag_median": 230.7221,
+        "avg_hidden_mag_mean": 23.15,
+        "avg_hidden_mag_std": 0.7944,
+        "avg_hidden_mag_median": 23.1559,
+        "avg_reversal_ratio_mean": 0.1127,
+        "avg_reversal_ratio_std": 0.0039,
+        "avg_reversal_ratio_median": 0.1122,
+        "avg_kurtosis_mean": 69155.9829,
+        "avg_kurtosis_std": 7845.6003,
+        "avg_kurtosis_median": 70484.2986,
+        "awq_error_mean": 0.3077,
+        "awq_error_std": 0.1775,
+        "awq_error_median": 0.3003,
+        "gptq_error_mean": NaN,
+        "gptq_error_std": NaN,
+        "gptq_error_median": NaN
+      },
+      "general": {
+        "avg_residual_mag_mean": 233.0282,
+        "avg_residual_mag_std": 13.7802,
+        "avg_residual_mag_median": 238.4692,
+        "avg_hidden_mag_mean": 22.6146,
+        "avg_hidden_mag_std": 1.3078,
+        "avg_hidden_mag_median": 22.7679,
+        "avg_reversal_ratio_mean": 0.112,
+        "avg_reversal_ratio_std": 0.0113,
+        "avg_reversal_ratio_median": 0.1076,
+        "avg_kurtosis_mean": 41506.0143,
+        "avg_kurtosis_std": 30107.3406,
+        "avg_kurtosis_median": 57788.1588,
+        "awq_error_mean": 0.6425,
+        "awq_error_std": 1.1622,
+        "awq_error_median": 0.457,
+        "gptq_error_mean": NaN,
+        "gptq_error_std": NaN,
+        "gptq_error_median": NaN
+      },
+      "gsm8k": {
+        "avg_residual_mag_mean": 216.8364,
+        "avg_residual_mag_std": 10.1281,
+        "avg_residual_mag_median": 213.5881,
+        "avg_hidden_mag_mean": 21.8138,
+        "avg_hidden_mag_std": 0.5421,
+        "avg_hidden_mag_median": 21.7764,
+        "avg_reversal_ratio_mean": 0.1261,
+        "avg_reversal_ratio_std": 0.0098,
+        "avg_reversal_ratio_median": 0.1287,
+        "avg_kurtosis_mean": 7813.6846,
+        "avg_kurtosis_std": 17919.8835,
+        "avg_kurtosis_median": 131.5378,
+        "awq_error_mean": 1.1664,
+        "awq_error_std": 1.5386,
+        "awq_error_median": 1.0547,
+        "gptq_error_mean": NaN,
+        "gptq_error_std": NaN,
+        "gptq_error_median": NaN
+      }
+    }
+  }
+}

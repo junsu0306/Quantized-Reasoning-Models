@@ -43,6 +43,7 @@ def get_pile_calib_dataset(tokenizer=None, n_samples=128, block_size=512):
 
 def get_reasoning_calib_dataset(model_name=None, tokenizer=None, n_samples=128, seqlen=2048,
                                 return_attention_mask=False):
+    """GPTQ용 수학 캘리브레이션 데이터셋 (토크나이즈된 Dataset 반환)"""
     transformers.set_seed(seed=0)
 
     traindata = read_jsonl(f"./datasets/gen_data/{model_name}/NuminaMath-1.5.jsonl")
@@ -50,7 +51,7 @@ def get_reasoning_calib_dataset(model_name=None, tokenizer=None, n_samples=128, 
     for item in traindata:
         traintext += item['full_prompt'] + item['generated_text'][0] + "\n\n"
 
-    trainenc = tokenizer(traintext, return_tensors='pt')    
+    trainenc = tokenizer(traintext, return_tensors='pt')
     trainloader = []
     for _ in range(n_samples):
         i = random.randint(0, trainenc.input_ids.shape[1] - seqlen - 1)
@@ -63,3 +64,22 @@ def get_reasoning_calib_dataset(model_name=None, tokenizer=None, n_samples=128, 
     if return_attention_mask:
         data_dict["attention_mask"] = [torch.ones_like(sample, dtype=torch.bool).tolist()[0] for sample in trainloader]
     return Dataset.from_dict(data_dict)
+
+
+def get_reasoning_calib_text_list(model_name=None, n_samples=128):
+    """AWQ용 수학 캘리브레이션 데이터셋 (텍스트 리스트 반환)"""
+    transformers.set_seed(seed=0)
+
+    traindata = read_jsonl(f"./datasets/gen_data/{model_name}/NuminaMath-1.5.jsonl")
+
+    # 전체 데이터를 섞고 n_samples만 선택
+    random.seed(0)
+    random.shuffle(traindata)
+
+    text_list = []
+    for item in traindata[:n_samples]:
+        text = item['full_prompt'] + item['generated_text'][0]
+        text_list.append(text)
+
+    print(f" * Loaded {len(text_list)} reasoning samples for AWQ calibration")
+    return text_list
