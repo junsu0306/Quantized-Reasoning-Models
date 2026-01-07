@@ -1,0 +1,24 @@
+{
+  "total": 2,
+  "description": "GPTQ 3-bit 개념 오류 (A1/A2)",
+  "cases": [
+    {
+      "index": 46,
+      "type": "A1. 개념적 오해",
+      "problem": "Zach has three bags and a bunch of pencils to be placed into the bags. He is told to place the greatest number of pencils possible into each of the three bags while also keeping the number of pencils in each bag the same. What is the greatest number of pencils he could have left over?",
+      "gold_answer": "2",
+      "answer_3bit": "0",
+      "answer_4bit": "2",
+      "description": "나머지 개념 오해: \"최대 나머지\"를 \"나머지=0\"으로 잘못 이해"
+    },
+    {
+      "index": 406,
+      "type": "A2. 맥락적 간과",
+      "problem": "How many elements are in the intersection of the set of all the prime numbers less than 30 and the set of all the odd numbers greater than zero?",
+      "gold_answer": "9",
+      "answer_3bit": "10",
+      "answer_4bit": "9",
+      "description": "2는 짝수 소수임을 간과하여 홀수 조건 미적용"
+    }
+  ]
+}
